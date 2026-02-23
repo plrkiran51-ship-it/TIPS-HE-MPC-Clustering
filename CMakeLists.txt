@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.16)
+project(TIPS_HE_MPC)
+find_package(OpenFHE REQUIRED)
+add_executable(kmeans src/main.cpp src/*.cpp)
+target_link_libraries(kmeans openfhe)
