@@ -1,2 +1,2 @@
-# TIPS HE-MPC Clustering (PhD Thesis Ch5/6)
+# TIPS HE-MPC Clustering 
 Initial commit - full C++ code coming from Experimentation_HE
