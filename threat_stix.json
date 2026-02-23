@@ -1,0 +1,10 @@
+{
+  "type": "bundle",
+  "id": "bundle--8fbdb6f4-d724-45e9-8d87-f1d7d6f2e5b8",
+  "spec_version": "2.1",
+  "objects": [
+    {"type":"threat-actor","id":"threat-actor--dfaa8d77-07e2-4e28-b2c8-92e9f7b04428","name":"Disco Team","threat_actor_types":["crime-syndicate"]},
+    {"type":"indicator","id":"indicator--ddc1bc71-0b9b-4be1-9a2e-b6f2b1c7f8e9","pattern":"[ipv4-addr:value = '192.168.1.100']","indicator_types":["malicious-activity"]},
+    {"type":"relationship","id":"relationship--a2e3efb5-351d-4d46-97a0-6897ee7c77a0","relationship_type":"uses","source_ref":"threat-actor--dfaa8d77-07e2-4e28-b2c8-92e9f7b04428","target_ref":"indicator--ddc1bc71-0b9b-4be1-9a2e-b6f2b1c7f8e9"}
+  ]
+}

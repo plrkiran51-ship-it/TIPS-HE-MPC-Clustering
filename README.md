@@ -1,19 +1,16 @@
-# TIPS-HE-MPC-Clustering
+# TIPS-HE-MPC-Clustering (PhD Thesis Implementation)
 
-Privacy-preserving threat clustering from STIX 2.1 data using OpenFHE CKKS + MPC.
+OpenFHE CKKS + MPC clustering on STIX threat data.
 
-## Thesis
-PhD Cybersecurity, Edinburgh Napier University: https://github.com/plrkiran123/Experimentation_HE/tree/HE
+## Files Copied from Experimentation_HE:
+$(ls src/*.cpp | wc -l) C++ files: main.cpp clustering.cpp etc.
 
-## Data
-`threat_stix.json` - STIX 2.1 bundle (threat-actors, IPs, relationships)
+## Experimental Setup (Ch5 Table 5.2)
+- N=16384, Δ=50, L=6
+- k=5 clusters, n=3 parties
+- Input: threat_stix.json (STIX IPs → country vectors)
 
-## Parameters (Ch5.2.10)
-- N=16384, Δ=50, L=6, k=5, n=3 parties
-
-## Run
-g++ src/main.cpp -o cluster
-./cluster threat_stix.json results/table6.4.csv
-
-## Results Table 6.4
-ARI=0.872 (HE-MPC), 127s runtime
+## Reproduce Table 6.4:
+g++ -std=c++17 src/main.cpp $(pkg-config --cflags --libs openfhe) -o cluster
+./cluster threat_stix.json
+cat results/table6.4.csv  # ARI=0.872
