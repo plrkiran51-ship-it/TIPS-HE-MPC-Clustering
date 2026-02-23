@@ -7,14 +7,12 @@
 using namespace lbcrypto;
 using json = nlohmann::json;
 
-// Callback function for libcurl
 size_t WriteCallback(void* contents, size_t size, size_t nmemb, std::string* output) {
     size_t totalSize = size * nmemb;
     output->append((char*)contents, totalSize);
     return totalSize;
 }
 
-// Function to fetch data from API
 json fetchDataFromAPI(const std::string& api_url) {
     CURL* curl = curl_easy_init();
     std::string response;
