@@ -1,1 +1,49 @@
+# TIPS-HE-MPC-Clustering config.yaml
+# PhD Thesis Chapter 5 - Table 5.2 Parameters [web:125][web:31]
+# OpenFHE CKKS + K-Means Clustering
+# =============================================
+
+openfhe:
+  scheme: CKKS
+  security_level: HEStd_128_classic
+  ring_dim: 16384           # N=2^14 [web:133]
+  mult_depth: 4             # Circuit depth
+  scale_bits: 50            # CKKS precision
+  slots: 8192               # Vector parallelism
+  first_mod_size: 60        # Initial modulus bits
+  scaling_tech: FLEXIBLEAUTO
+
+kmeans:
+  dataset: "results/bank_data.csv"  # Your banking dataset
+  n_clusters: 3                     # K=3 clusters
+  max_iters: 100
+  init: "kmeans++"
+  batch_size: 1024
+  tolerance: 1e-4
+
+paths:
+  input: "data/"
+  output: "results/"
+  models: "models/he_ckks_k3.pth"
+  logs: "logs/training.log"
+
+hardware:
+  threads: 10                # Your MacBook-Air cores
+  gpu: false
+  precision: "double"
+
+bootstrap:
+  enabled: true
+  iterations: 2              # Double precision [web:136]
+  level_budget: [3, 3]
+  precision_target: 17       # bits post-bootstrap
+
+# Threat Model (STIX integration)
+threat_model: "threat_stix.json"
+adversary: "semi-honest"
+
+# Docker
+docker:
+  image: "openfhe/openfhe:latest"
+  volume: "./:/workspace"
 
