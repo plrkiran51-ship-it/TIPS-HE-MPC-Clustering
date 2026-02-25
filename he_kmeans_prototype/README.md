@@ -30,3 +30,23 @@ Use this plaintext prototype as the baseline for Chapter 6 (ARI + runtime). Then
 4) decrypts final centroids for evaluation.
 
 The key is: **you must report findings** (ARI, runtime, accuracy loss vs plaintext).
+
+
+
+
+
+-----
+##### 📖 User Manual
+
+
+
+Quick start:
+```bash
+git clone https://github.com/plrkiran51-ship-it/TIPS-HE-MPC-Clustering.git
+cd TIPS-HE-MPC-Clustering && git switch HE
+cd he_kmeans_prototype
+rm -rf build && mkdir build && cd build
+cmake .. -DCMAKE_BUILD_TYPE=Release && make -j10
+./kmeans                # Plaintext baseline
+./he_hybrid_kmeans      # HE-hybrid version
+
