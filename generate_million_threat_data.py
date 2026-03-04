@@ -1,3 +1,4 @@
+# It helps to test with mock data initially
 import csv
 import random
 from datetime import datetime, timedelta
