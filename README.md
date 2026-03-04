@@ -20,8 +20,11 @@ cd /Users/plrkiran1/TIPS-HE-MPC-Clustering/he_kmeans_prototype/build
 
 ## Quick Start (macOS/Linux)
 
-### 1. Data (1M synthetic STIX-derived vectors)
+### 1. Data 
 ```bash
 git clone --recursive https://github.com/plrkiran51-ship-it/TIPS-HE-MPC-Clustering.git
 cd TIPS-HE-MPC-Clustering
 pip install -r requirements.txt
+
+
+test with threat_dataset_1M.csv
