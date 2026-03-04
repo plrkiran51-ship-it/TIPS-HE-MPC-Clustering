@@ -13,8 +13,8 @@ cd /Users/plrkiran1/TIPS-HE-MPC-Clustering/he_kmeans_prototype/build
 # TIPS: Privacy-Preserving HE-MPC Clustering for Threat Intelligence
 
 **Reproducibility package** for PhD "Trusted Privacy-Preserving Threat Information Platform for Sharing" (Edinburgh Napier University, 2026)
-[(https://img.shields.io/github/v/release/plrkiran51-ship-it/TIPS-HE-MPC-Clustering?include_prereleases)](https://github.com/plrkiran51-ship-it/TIPS-HE-MPC-Clustering/releases)
-[(https://img.shields.io/github/license/plrkiran51-ship-it/TIPS-HE-MPC-Clustering)](plrkiran54@gmail.com)
+plrkiran51-ship-it/TIPS-HE-MPC-Clustering?include_prereleases(https://github.com/plrkiran51-ship-it/TIPS-HE-MPC-Clustering/releases)
+plrkiran51-ship-it/TIPS-HE-MPC-Clustering(plrkiran54@gmail.com)
 
 
 
