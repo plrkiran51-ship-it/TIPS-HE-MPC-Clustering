@@ -24,7 +24,6 @@ plrkiran51-ship-it/TIPS-HE-MPC-Clustering(plrkiran54@gmail.com)
 ```bash
 git clone --recursive https://github.com/plrkiran51-ship-it/TIPS-HE-MPC-Clustering.git
 cd TIPS-HE-MPC-Clustering
-pip install -r requirements.txt
 
 
 test with threat_dataset_1M.csv
