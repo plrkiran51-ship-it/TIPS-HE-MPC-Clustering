@@ -27,3 +27,5 @@ cd TIPS-HE-MPC-Clustering
 
 
 test with threat_dataset_1M.csv
+
+###Results are in Results folder
