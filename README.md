@@ -77,3 +77,8 @@ pip install -r requirements.txt
 ```bash
 pip install -r requirements.txt
 # Key packages: flask, pandas, scikit-learn, numpy
+
+Infrastructure (MPC Workers)
+Docker ≥ 20.x
+
+Kubernetes ≥ 1.24 (AWS EKS or local minikube)
