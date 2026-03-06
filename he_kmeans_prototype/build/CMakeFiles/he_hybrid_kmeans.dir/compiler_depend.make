@@ -879,498 +879,512 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdarg.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h \
-  /opt/homebrew/include/cereal/access.hpp \
-  /opt/homebrew/include/cereal/archives/json.hpp \
-  /opt/homebrew/include/cereal/archives/portable_binary.hpp \
-  /opt/homebrew/include/cereal/cereal.hpp \
-  /opt/homebrew/include/cereal/details/helpers.hpp \
-  /opt/homebrew/include/cereal/details/polymorphic_impl.hpp \
-  /opt/homebrew/include/cereal/details/polymorphic_impl_fwd.hpp \
-  /opt/homebrew/include/cereal/details/static_object.hpp \
-  /opt/homebrew/include/cereal/details/traits.hpp \
-  /opt/homebrew/include/cereal/details/util.hpp \
-  /opt/homebrew/include/cereal/external/base64.hpp \
-  /opt/homebrew/include/cereal/external/rapidjson/allocators.h \
-  /opt/homebrew/include/cereal/external/rapidjson/document.h \
-  /opt/homebrew/include/cereal/external/rapidjson/encodedstream.h \
-  /opt/homebrew/include/cereal/external/rapidjson/encodings.h \
-  /opt/homebrew/include/cereal/external/rapidjson/rapidjson.h \
-  /opt/homebrew/include/cereal/external/rapidjson/error/error.h \
-  /opt/homebrew/include/cereal/external/rapidjson/allocators.h \
-  /opt/homebrew/include/cereal/external/rapidjson/rapidjson.h \
-  /opt/homebrew/include/cereal/external/rapidjson/stream.h \
-  /opt/homebrew/include/cereal/external/rapidjson/internal/biginteger.h \
-  /opt/homebrew/include/cereal/external/rapidjson/internal/diyfp.h \
-  /opt/homebrew/include/cereal/external/rapidjson/internal/dtoa.h \
-  /opt/homebrew/include/cereal/external/rapidjson/internal/ieee754.h \
-  /opt/homebrew/include/cereal/external/rapidjson/internal/itoa.h \
-  /opt/homebrew/include/cereal/external/rapidjson/internal/meta.h \
-  /opt/homebrew/include/cereal/external/rapidjson/internal/pow10.h \
-  /opt/homebrew/include/cereal/external/rapidjson/internal/stack.h \
-  /opt/homebrew/include/cereal/external/rapidjson/internal/strfunc.h \
-  /opt/homebrew/include/cereal/external/rapidjson/internal/strtod.h \
-  /opt/homebrew/include/cereal/external/rapidjson/internal/swap.h \
-  /opt/homebrew/include/cereal/external/rapidjson/istreamwrapper.h \
-  /opt/homebrew/include/cereal/external/rapidjson/memorystream.h \
-  /opt/homebrew/include/cereal/external/rapidjson/ostreamwrapper.h \
-  /opt/homebrew/include/cereal/external/rapidjson/prettywriter.h \
-  /opt/homebrew/include/cereal/external/rapidjson/rapidjson.h \
-  /opt/homebrew/include/cereal/external/rapidjson/reader.h \
-  /opt/homebrew/include/cereal/external/rapidjson/stream.h \
-  /opt/homebrew/include/cereal/external/rapidjson/stringbuffer.h \
-  /opt/homebrew/include/cereal/external/rapidjson/writer.h \
-  /opt/homebrew/include/cereal/macros.hpp \
-  /opt/homebrew/include/cereal/specialize.hpp \
-  /opt/homebrew/include/cereal/types/base_class.hpp \
-  /opt/homebrew/include/cereal/types/common.hpp \
-  /opt/homebrew/include/cereal/types/concepts/pair_associative_container.hpp \
-  /opt/homebrew/include/cereal/types/map.hpp \
-  /opt/homebrew/include/cereal/types/memory.hpp \
-  /opt/homebrew/include/cereal/types/polymorphic.hpp \
-  /opt/homebrew/include/cereal/types/string.hpp \
-  /opt/homebrew/include/cereal/types/vector.hpp \
-  /opt/homebrew/include/openfhe/binfhe/binfhe-base-params.h \
-  /opt/homebrew/include/openfhe/binfhe/binfhe-base-scheme.h \
-  /opt/homebrew/include/openfhe/binfhe/binfhe-constants.h \
-  /opt/homebrew/include/openfhe/binfhe/binfhecontext.h \
-  /opt/homebrew/include/openfhe/binfhe/lwe-ciphertext-fwd.h \
-  /opt/homebrew/include/openfhe/binfhe/lwe-ciphertext.h \
-  /opt/homebrew/include/openfhe/binfhe/lwe-cryptoparameters.h \
-  /opt/homebrew/include/openfhe/binfhe/lwe-keypair-fwd.h \
-  /opt/homebrew/include/openfhe/binfhe/lwe-keypair.h \
-  /opt/homebrew/include/openfhe/binfhe/lwe-keyswitchkey-fwd.h \
-  /opt/homebrew/include/openfhe/binfhe/lwe-keyswitchkey.h \
-  /opt/homebrew/include/openfhe/binfhe/lwe-pke.h \
-  /opt/homebrew/include/openfhe/binfhe/lwe-privatekey-fwd.h \
-  /opt/homebrew/include/openfhe/binfhe/lwe-privatekey.h \
-  /opt/homebrew/include/openfhe/binfhe/lwe-publickey-fwd.h \
-  /opt/homebrew/include/openfhe/binfhe/lwe-publickey.h \
-  /opt/homebrew/include/openfhe/binfhe/rgsw-acc-cggi.h \
-  /opt/homebrew/include/openfhe/binfhe/rgsw-acc-dm.h \
-  /opt/homebrew/include/openfhe/binfhe/rgsw-acc-lmkcdey.h \
-  /opt/homebrew/include/openfhe/binfhe/rgsw-acc.h \
-  /opt/homebrew/include/openfhe/binfhe/rgsw-acckey.h \
-  /opt/homebrew/include/openfhe/binfhe/rgsw-cryptoparameters.h \
-  /opt/homebrew/include/openfhe/binfhe/rgsw-evalkey.h \
-  /opt/homebrew/include/openfhe/binfhe/rlwe-ciphertext.h \
-  /opt/homebrew/include/openfhe/core/config_core.h \
-  /opt/homebrew/include/openfhe/core/lattice/constants-lattice.h \
-  /opt/homebrew/include/openfhe/core/lattice/hal/dcrtpoly-interface.h \
-  /opt/homebrew/include/openfhe/core/lattice/hal/default/dcrtpoly.h \
-  /opt/homebrew/include/openfhe/core/lattice/hal/default/ildcrtparams.h \
-  /opt/homebrew/include/openfhe/core/lattice/hal/default/ilparams.h \
-  /opt/homebrew/include/openfhe/core/lattice/hal/default/poly.h \
-  /opt/homebrew/include/openfhe/core/lattice/hal/elemparams.h \
-  /opt/homebrew/include/openfhe/core/lattice/hal/lat-backend.h \
-  /opt/homebrew/include/openfhe/core/lattice/hal/poly-interface.h \
-  /opt/homebrew/include/openfhe/core/lattice/ilelement.h \
-  /opt/homebrew/include/openfhe/core/lattice/lat-hal.h \
-  /opt/homebrew/include/openfhe/core/lattice/stdlatticeparms.h \
-  /opt/homebrew/include/openfhe/core/math/binaryuniformgenerator.h \
-  /opt/homebrew/include/openfhe/core/math/discretegaussiangenerator.h \
-  /opt/homebrew/include/openfhe/core/math/discretegaussiangeneratorgeneric.h \
-  /opt/homebrew/include/openfhe/core/math/discreteuniformgenerator.h \
-  /opt/homebrew/include/openfhe/core/math/distrgen.h \
-  /opt/homebrew/include/openfhe/core/math/distributiongenerator.h \
-  /opt/homebrew/include/openfhe/core/math/hal/basicint.h \
-  /opt/homebrew/include/openfhe/core/math/hal/bigintbackend.h \
-  /opt/homebrew/include/openfhe/core/math/hal/bigintdyn/backenddyn.h \
-  /opt/homebrew/include/openfhe/core/math/hal/bigintdyn/mubintvecdyn.h \
-  /opt/homebrew/include/openfhe/core/math/hal/bigintdyn/transformdyn-impl.h \
-  /opt/homebrew/include/openfhe/core/math/hal/bigintdyn/transformdyn.h \
-  /opt/homebrew/include/openfhe/core/math/hal/bigintdyn/ubintdyn.h \
-  /opt/homebrew/include/openfhe/core/math/hal/bigintfxd/backendfxd.h \
-  /opt/homebrew/include/openfhe/core/math/hal/bigintntl/backendntl.h \
-  /opt/homebrew/include/openfhe/core/math/hal/integer.h \
-  /opt/homebrew/include/openfhe/core/math/hal/intnat/mubintvecnat.h \
-  /opt/homebrew/include/openfhe/core/math/hal/intnat/transformnat-impl.h \
-  /opt/homebrew/include/openfhe/core/math/hal/intnat/transformnat.h \
-  /opt/homebrew/include/openfhe/core/math/hal/intnat/ubintnat.h \
-  /opt/homebrew/include/openfhe/core/math/hal/nativeintbackend.h \
-  /opt/homebrew/include/openfhe/core/math/hal/transform.h \
-  /opt/homebrew/include/openfhe/core/math/hal/vector.h \
-  /opt/homebrew/include/openfhe/core/math/math-hal.h \
-  /opt/homebrew/include/openfhe/core/math/matrix.h \
-  /opt/homebrew/include/openfhe/core/math/nbtheory-impl.h \
-  /opt/homebrew/include/openfhe/core/math/nbtheory.h \
-  /opt/homebrew/include/openfhe/core/math/ternaryuniformgenerator.h \
-  /opt/homebrew/include/openfhe/core/openfhecore.h \
-  /opt/homebrew/include/openfhe/core/utils/blockAllocator/stl_allocator.h \
-  /opt/homebrew/include/openfhe/core/utils/blockAllocator/xallocator.h \
-  /opt/homebrew/include/openfhe/core/utils/blockAllocator/xvector.h \
-  /opt/homebrew/include/openfhe/core/utils/caller_info.h \
-  /opt/homebrew/include/openfhe/core/utils/debug.h \
-  /opt/homebrew/include/openfhe/core/utils/demangle.h \
-  /opt/homebrew/include/openfhe/core/utils/exception.h \
-  /opt/homebrew/include/openfhe/core/utils/get-call-stack.h \
-  /opt/homebrew/include/openfhe/core/utils/inttypes.h \
-  /opt/homebrew/include/openfhe/core/utils/memory.h \
-  /opt/homebrew/include/openfhe/core/utils/openfhebase64.h \
-  /opt/homebrew/include/openfhe/core/utils/parallel.h \
-  /opt/homebrew/include/openfhe/core/utils/prng/prng.h \
-  /opt/homebrew/include/openfhe/core/utils/serial.h \
-  /opt/homebrew/include/openfhe/core/utils/serializable.h \
-  /opt/homebrew/include/openfhe/core/utils/sertype.h \
-  /opt/homebrew/include/openfhe/core/utils/type_name.h \
-  /opt/homebrew/include/openfhe/core/utils/utilities.h \
-  /opt/homebrew/include/openfhe/core/version.h \
-  /opt/homebrew/include/openfhe/pke/ciphertext-fwd.h \
-  /opt/homebrew/include/openfhe/pke/ciphertext.h \
-  /opt/homebrew/include/openfhe/pke/constants-defs.h \
-  /opt/homebrew/include/openfhe/pke/constants.h \
-  /opt/homebrew/include/openfhe/pke/cryptocontext-fwd.h \
-  /opt/homebrew/include/openfhe/pke/cryptocontext.h \
-  /opt/homebrew/include/openfhe/pke/cryptocontextfactory.h \
-  /opt/homebrew/include/openfhe/pke/cryptoobject.h \
-  /opt/homebrew/include/openfhe/pke/encoding/ckkspackedencoding.h \
-  /opt/homebrew/include/openfhe/pke/encoding/coefpackedencoding.h \
-  /opt/homebrew/include/openfhe/pke/encoding/encodingparams.h \
-  /opt/homebrew/include/openfhe/pke/encoding/encodings.h \
-  /opt/homebrew/include/openfhe/pke/encoding/packedencoding.h \
-  /opt/homebrew/include/openfhe/pke/encoding/plaintext-fwd.h \
-  /opt/homebrew/include/openfhe/pke/encoding/plaintext.h \
-  /opt/homebrew/include/openfhe/pke/encoding/plaintextfactory.h \
-  /opt/homebrew/include/openfhe/pke/encoding/stringencoding.h \
-  /opt/homebrew/include/openfhe/pke/gen-cryptocontext.h \
-  /opt/homebrew/include/openfhe/pke/globals.h \
-  /opt/homebrew/include/openfhe/pke/key/evalkey-fwd.h \
-  /opt/homebrew/include/openfhe/pke/key/evalkey.h \
-  /opt/homebrew/include/openfhe/pke/key/evalkeyrelin-fwd.h \
-  /opt/homebrew/include/openfhe/pke/key/evalkeyrelin.h \
-  /opt/homebrew/include/openfhe/pke/key/key.h \
-  /opt/homebrew/include/openfhe/pke/key/keypair.h \
-  /opt/homebrew/include/openfhe/pke/key/privatekey-fwd.h \
-  /opt/homebrew/include/openfhe/pke/key/privatekey.h \
-  /opt/homebrew/include/openfhe/pke/key/publickey-fwd.h \
-  /opt/homebrew/include/openfhe/pke/key/publickey.h \
-  /opt/homebrew/include/openfhe/pke/keyswitch/keyswitch-base.h \
-  /opt/homebrew/include/openfhe/pke/keyswitch/keyswitch-bv.h \
-  /opt/homebrew/include/openfhe/pke/keyswitch/keyswitch-hybrid.h \
-  /opt/homebrew/include/openfhe/pke/keyswitch/keyswitch-rns.h \
-  /opt/homebrew/include/openfhe/pke/metadata.h \
-  /opt/homebrew/include/openfhe/pke/openfhe.h \
-  /opt/homebrew/include/openfhe/pke/scheme/bfvrns/bfvrns-advancedshe.h \
-  /opt/homebrew/include/openfhe/pke/scheme/bfvrns/bfvrns-cryptoparameters.h \
-  /opt/homebrew/include/openfhe/pke/scheme/bfvrns/bfvrns-fhe.h \
-  /opt/homebrew/include/openfhe/pke/scheme/bfvrns/bfvrns-leveledshe.h \
-  /opt/homebrew/include/openfhe/pke/scheme/bfvrns/bfvrns-multiparty.h \
-  /opt/homebrew/include/openfhe/pke/scheme/bfvrns/bfvrns-parametergeneration.h \
-  /opt/homebrew/include/openfhe/pke/scheme/bfvrns/bfvrns-pke.h \
-  /opt/homebrew/include/openfhe/pke/scheme/bfvrns/bfvrns-pre.h \
-  /opt/homebrew/include/openfhe/pke/scheme/bfvrns/bfvrns-scheme.h \
-  /opt/homebrew/include/openfhe/pke/scheme/bfvrns/gen-cryptocontext-bfvrns-internal.h \
-  /opt/homebrew/include/openfhe/pke/scheme/bfvrns/gen-cryptocontext-bfvrns-params.h \
-  /opt/homebrew/include/openfhe/pke/scheme/bfvrns/gen-cryptocontext-bfvrns.h \
-  /opt/homebrew/include/openfhe/pke/scheme/bgvrns/bgvrns-advancedshe.h \
-  /opt/homebrew/include/openfhe/pke/scheme/bgvrns/bgvrns-cryptoparameters.h \
-  /opt/homebrew/include/openfhe/pke/scheme/bgvrns/bgvrns-fhe.h \
-  /opt/homebrew/include/openfhe/pke/scheme/bgvrns/bgvrns-leveledshe.h \
-  /opt/homebrew/include/openfhe/pke/scheme/bgvrns/bgvrns-multiparty.h \
-  /opt/homebrew/include/openfhe/pke/scheme/bgvrns/bgvrns-parametergeneration.h \
-  /opt/homebrew/include/openfhe/pke/scheme/bgvrns/bgvrns-pke.h \
-  /opt/homebrew/include/openfhe/pke/scheme/bgvrns/bgvrns-pre.h \
-  /opt/homebrew/include/openfhe/pke/scheme/bgvrns/bgvrns-scheme.h \
-  /opt/homebrew/include/openfhe/pke/scheme/bgvrns/gen-cryptocontext-bgvrns-internal.h \
-  /opt/homebrew/include/openfhe/pke/scheme/bgvrns/gen-cryptocontext-bgvrns-params.h \
-  /opt/homebrew/include/openfhe/pke/scheme/bgvrns/gen-cryptocontext-bgvrns.h \
-  /opt/homebrew/include/openfhe/pke/scheme/ckksrns/ckksrns-advancedshe.h \
-  /opt/homebrew/include/openfhe/pke/scheme/ckksrns/ckksrns-cryptoparameters.h \
-  /opt/homebrew/include/openfhe/pke/scheme/ckksrns/ckksrns-fhe.h \
-  /opt/homebrew/include/openfhe/pke/scheme/ckksrns/ckksrns-leveledshe.h \
-  /opt/homebrew/include/openfhe/pke/scheme/ckksrns/ckksrns-multiparty.h \
-  /opt/homebrew/include/openfhe/pke/scheme/ckksrns/ckksrns-parametergeneration.h \
-  /opt/homebrew/include/openfhe/pke/scheme/ckksrns/ckksrns-pke.h \
-  /opt/homebrew/include/openfhe/pke/scheme/ckksrns/ckksrns-pre.h \
-  /opt/homebrew/include/openfhe/pke/scheme/ckksrns/ckksrns-scheme.h \
-  /opt/homebrew/include/openfhe/pke/scheme/ckksrns/ckksrns-schemeswitching.h \
-  /opt/homebrew/include/openfhe/pke/scheme/ckksrns/ckksrns-utils.h \
-  /opt/homebrew/include/openfhe/pke/scheme/ckksrns/gen-cryptocontext-ckksrns-internal.h \
-  /opt/homebrew/include/openfhe/pke/scheme/ckksrns/gen-cryptocontext-ckksrns-params.h \
-  /opt/homebrew/include/openfhe/pke/scheme/ckksrns/gen-cryptocontext-ckksrns.h \
-  /opt/homebrew/include/openfhe/pke/scheme/gen-cryptocontext-params-validation.h \
-  /opt/homebrew/include/openfhe/pke/scheme/gen-cryptocontext-params.h \
-  /opt/homebrew/include/openfhe/pke/scheme/scheme-id.h \
-  /opt/homebrew/include/openfhe/pke/scheme/scheme-swch-params.h \
-  /opt/homebrew/include/openfhe/pke/scheme/scheme-utils.h \
-  /opt/homebrew/include/openfhe/pke/schemebase/base-advancedshe.h \
-  /opt/homebrew/include/openfhe/pke/schemebase/base-cryptoparameters.h \
-  /opt/homebrew/include/openfhe/pke/schemebase/base-fhe.h \
-  /opt/homebrew/include/openfhe/pke/schemebase/base-leveledshe.h \
-  /opt/homebrew/include/openfhe/pke/schemebase/base-multiparty.h \
-  /opt/homebrew/include/openfhe/pke/schemebase/base-parametergeneration.h \
-  /opt/homebrew/include/openfhe/pke/schemebase/base-pke.h \
-  /opt/homebrew/include/openfhe/pke/schemebase/base-pre.h \
-  /opt/homebrew/include/openfhe/pke/schemebase/base-scheme.h \
-  /opt/homebrew/include/openfhe/pke/schemebase/decrypt-result.h \
-  /opt/homebrew/include/openfhe/pke/schemebase/rlwe-cryptoparameters.h \
-  /opt/homebrew/include/openfhe/pke/schemerns/rns-advancedshe.h \
-  /opt/homebrew/include/openfhe/pke/schemerns/rns-cryptoparameters.h \
-  /opt/homebrew/include/openfhe/pke/schemerns/rns-fhe.h \
-  /opt/homebrew/include/openfhe/pke/schemerns/rns-leveledshe.h \
-  /opt/homebrew/include/openfhe/pke/schemerns/rns-multiparty.h \
-  /opt/homebrew/include/openfhe/pke/schemerns/rns-parametergeneration.h \
-  /opt/homebrew/include/openfhe/pke/schemerns/rns-pke.h \
-  /opt/homebrew/include/openfhe/pke/schemerns/rns-pre.h \
-  /opt/homebrew/include/openfhe/pke/schemerns/rns-scheme.h
-
-
-/opt/homebrew/include/openfhe/pke/schemerns/rns-scheme.h:
-
-/opt/homebrew/include/openfhe/pke/schemerns/rns-pre.h:
-
-/opt/homebrew/include/openfhe/pke/schemerns/rns-pke.h:
-
-/opt/homebrew/include/openfhe/pke/schemerns/rns-parametergeneration.h:
-
-/opt/homebrew/include/openfhe/pke/schemerns/rns-multiparty.h:
-
-/opt/homebrew/include/openfhe/pke/schemerns/rns-fhe.h:
-
-/opt/homebrew/include/openfhe/pke/schemerns/rns-cryptoparameters.h:
-
-/opt/homebrew/include/openfhe/pke/schemebase/rlwe-cryptoparameters.h:
-
-/opt/homebrew/include/openfhe/pke/schemebase/base-scheme.h:
-
-/opt/homebrew/include/openfhe/pke/schemebase/base-pre.h:
-
-/opt/homebrew/include/openfhe/pke/schemebase/base-pke.h:
-
-/opt/homebrew/include/openfhe/pke/schemebase/base-multiparty.h:
-
-/opt/homebrew/include/openfhe/pke/schemebase/base-leveledshe.h:
-
-/opt/homebrew/include/openfhe/pke/schemebase/base-cryptoparameters.h:
-
-/opt/homebrew/include/openfhe/pke/scheme/scheme-utils.h:
+  /usr/local/include/openfhe.BAK/binfhe/binfhe-base-params.h \
+  /usr/local/include/openfhe.BAK/binfhe/binfhe-base-scheme.h \
+  /usr/local/include/openfhe.BAK/binfhe/binfhe-constants.h \
+  /usr/local/include/openfhe.BAK/binfhe/binfhecontext.h \
+  /usr/local/include/openfhe.BAK/binfhe/lwe-ciphertext-fwd.h \
+  /usr/local/include/openfhe.BAK/binfhe/lwe-ciphertext.h \
+  /usr/local/include/openfhe.BAK/binfhe/lwe-cryptoparameters.h \
+  /usr/local/include/openfhe.BAK/binfhe/lwe-keypair-fwd.h \
+  /usr/local/include/openfhe.BAK/binfhe/lwe-keypair.h \
+  /usr/local/include/openfhe.BAK/binfhe/lwe-keyswitchkey-fwd.h \
+  /usr/local/include/openfhe.BAK/binfhe/lwe-keyswitchkey.h \
+  /usr/local/include/openfhe.BAK/binfhe/lwe-pke.h \
+  /usr/local/include/openfhe.BAK/binfhe/lwe-privatekey-fwd.h \
+  /usr/local/include/openfhe.BAK/binfhe/lwe-privatekey.h \
+  /usr/local/include/openfhe.BAK/binfhe/lwe-publickey-fwd.h \
+  /usr/local/include/openfhe.BAK/binfhe/lwe-publickey.h \
+  /usr/local/include/openfhe.BAK/binfhe/rgsw-acc-cggi.h \
+  /usr/local/include/openfhe.BAK/binfhe/rgsw-acc-dm.h \
+  /usr/local/include/openfhe.BAK/binfhe/rgsw-acc-lmkcdey.h \
+  /usr/local/include/openfhe.BAK/binfhe/rgsw-acc.h \
+  /usr/local/include/openfhe.BAK/binfhe/rgsw-acckey.h \
+  /usr/local/include/openfhe.BAK/binfhe/rgsw-cryptoparameters.h \
+  /usr/local/include/openfhe.BAK/binfhe/rgsw-evalkey.h \
+  /usr/local/include/openfhe.BAK/binfhe/rlwe-ciphertext.h \
+  /usr/local/include/openfhe.BAK/cereal/access.hpp \
+  /usr/local/include/openfhe.BAK/cereal/archives/json.hpp \
+  /usr/local/include/openfhe.BAK/cereal/archives/portable_binary.hpp \
+  /usr/local/include/openfhe.BAK/cereal/cereal.hpp \
+  /usr/local/include/openfhe.BAK/cereal/details/helpers.hpp \
+  /usr/local/include/openfhe.BAK/cereal/details/polymorphic_impl.hpp \
+  /usr/local/include/openfhe.BAK/cereal/details/polymorphic_impl_fwd.hpp \
+  /usr/local/include/openfhe.BAK/cereal/details/static_object.hpp \
+  /usr/local/include/openfhe.BAK/cereal/details/traits.hpp \
+  /usr/local/include/openfhe.BAK/cereal/details/util.hpp \
+  /usr/local/include/openfhe.BAK/cereal/external/base64.hpp \
+  /usr/local/include/openfhe.BAK/cereal/external/rapidjson/allocators.h \
+  /usr/local/include/openfhe.BAK/cereal/external/rapidjson/document.h \
+  /usr/local/include/openfhe.BAK/cereal/external/rapidjson/encodedstream.h \
+  /usr/local/include/openfhe.BAK/cereal/external/rapidjson/encodings.h \
+  /usr/local/include/openfhe.BAK/cereal/external/rapidjson/rapidjson.h \
+  /usr/local/include/openfhe.BAK/cereal/external/rapidjson/error/error.h \
+  /usr/local/include/openfhe.BAK/cereal/external/rapidjson/allocators.h \
+  /usr/local/include/openfhe.BAK/cereal/external/rapidjson/rapidjson.h \
+  /usr/local/include/openfhe.BAK/cereal/external/rapidjson/stream.h \
+  /usr/local/include/openfhe.BAK/cereal/external/rapidjson/internal/biginteger.h \
+  /usr/local/include/openfhe.BAK/cereal/external/rapidjson/internal/diyfp.h \
+  /usr/local/include/openfhe.BAK/cereal/external/rapidjson/internal/dtoa.h \
+  /usr/local/include/openfhe.BAK/cereal/external/rapidjson/internal/ieee754.h \
+  /usr/local/include/openfhe.BAK/cereal/external/rapidjson/internal/itoa.h \
+  /usr/local/include/openfhe.BAK/cereal/external/rapidjson/internal/meta.h \
+  /usr/local/include/openfhe.BAK/cereal/external/rapidjson/internal/pow10.h \
+  /usr/local/include/openfhe.BAK/cereal/external/rapidjson/internal/stack.h \
+  /usr/local/include/openfhe.BAK/cereal/external/rapidjson/internal/strfunc.h \
+  /usr/local/include/openfhe.BAK/cereal/external/rapidjson/internal/strtod.h \
+  /usr/local/include/openfhe.BAK/cereal/external/rapidjson/internal/swap.h \
+  /usr/local/include/openfhe.BAK/cereal/external/rapidjson/istreamwrapper.h \
+  /usr/local/include/openfhe.BAK/cereal/external/rapidjson/memorystream.h \
+  /usr/local/include/openfhe.BAK/cereal/external/rapidjson/ostreamwrapper.h \
+  /usr/local/include/openfhe.BAK/cereal/external/rapidjson/prettywriter.h \
+  /usr/local/include/openfhe.BAK/cereal/external/rapidjson/rapidjson.h \
+  /usr/local/include/openfhe.BAK/cereal/external/rapidjson/reader.h \
+  /usr/local/include/openfhe.BAK/cereal/external/rapidjson/stream.h \
+  /usr/local/include/openfhe.BAK/cereal/external/rapidjson/stringbuffer.h \
+  /usr/local/include/openfhe.BAK/cereal/external/rapidjson/writer.h \
+  /usr/local/include/openfhe.BAK/cereal/macros.hpp \
+  /usr/local/include/openfhe.BAK/cereal/specialize.hpp \
+  /usr/local/include/openfhe.BAK/cereal/types/base_class.hpp \
+  /usr/local/include/openfhe.BAK/cereal/types/common.hpp \
+  /usr/local/include/openfhe.BAK/cereal/types/concepts/pair_associative_container.hpp \
+  /usr/local/include/openfhe.BAK/cereal/types/map.hpp \
+  /usr/local/include/openfhe.BAK/cereal/types/memory.hpp \
+  /usr/local/include/openfhe.BAK/cereal/types/polymorphic.hpp \
+  /usr/local/include/openfhe.BAK/cereal/types/string.hpp \
+  /usr/local/include/openfhe.BAK/cereal/types/vector.hpp \
+  /usr/local/include/openfhe.BAK/core/config_core.h \
+  /usr/local/include/openfhe.BAK/core/lattice/constants-lattice.h \
+  /usr/local/include/openfhe.BAK/core/lattice/hal/dcrtpoly-interface.h \
+  /usr/local/include/openfhe.BAK/core/lattice/hal/default/dcrtpoly.h \
+  /usr/local/include/openfhe.BAK/core/lattice/hal/default/ildcrtparams.h \
+  /usr/local/include/openfhe.BAK/core/lattice/hal/default/ilparams.h \
+  /usr/local/include/openfhe.BAK/core/lattice/hal/default/poly.h \
+  /usr/local/include/openfhe.BAK/core/lattice/hal/elemparams.h \
+  /usr/local/include/openfhe.BAK/core/lattice/hal/lat-backend.h \
+  /usr/local/include/openfhe.BAK/core/lattice/hal/poly-interface.h \
+  /usr/local/include/openfhe.BAK/core/lattice/ilelement.h \
+  /usr/local/include/openfhe.BAK/core/lattice/lat-hal.h \
+  /usr/local/include/openfhe.BAK/core/lattice/stdlatticeparms.h \
+  /usr/local/include/openfhe.BAK/core/math/binaryuniformgenerator.h \
+  /usr/local/include/openfhe.BAK/core/math/discretegaussiangenerator.h \
+  /usr/local/include/openfhe.BAK/core/math/discretegaussiangeneratorgeneric.h \
+  /usr/local/include/openfhe.BAK/core/math/discreteuniformgenerator.h \
+  /usr/local/include/openfhe.BAK/core/math/distrgen.h \
+  /usr/local/include/openfhe.BAK/core/math/distributiongenerator.h \
+  /usr/local/include/openfhe.BAK/core/math/hal/basicint.h \
+  /usr/local/include/openfhe.BAK/core/math/hal/bigintbackend.h \
+  /usr/local/include/openfhe.BAK/core/math/hal/bigintdyn/backenddyn.h \
+  /usr/local/include/openfhe.BAK/core/math/hal/bigintdyn/mubintvecdyn.h \
+  /usr/local/include/openfhe.BAK/core/math/hal/bigintdyn/transformdyn-impl.h \
+  /usr/local/include/openfhe.BAK/core/math/hal/bigintdyn/transformdyn.h \
+  /usr/local/include/openfhe.BAK/core/math/hal/bigintdyn/ubintdyn.h \
+  /usr/local/include/openfhe.BAK/core/math/hal/bigintfxd/backendfxd.h \
+  /usr/local/include/openfhe.BAK/core/math/hal/bigintntl/backendntl.h \
+  /usr/local/include/openfhe.BAK/core/math/hal/integer.h \
+  /usr/local/include/openfhe.BAK/core/math/hal/intnat/mubintvecnat.h \
+  /usr/local/include/openfhe.BAK/core/math/hal/intnat/transformnat-impl.h \
+  /usr/local/include/openfhe.BAK/core/math/hal/intnat/transformnat.h \
+  /usr/local/include/openfhe.BAK/core/math/hal/intnat/ubintnat.h \
+  /usr/local/include/openfhe.BAK/core/math/hal/nativeintbackend.h \
+  /usr/local/include/openfhe.BAK/core/math/hal/transform.h \
+  /usr/local/include/openfhe.BAK/core/math/hal/vector.h \
+  /usr/local/include/openfhe.BAK/core/math/math-hal.h \
+  /usr/local/include/openfhe.BAK/core/math/matrix.h \
+  /usr/local/include/openfhe.BAK/core/math/nbtheory-impl.h \
+  /usr/local/include/openfhe.BAK/core/math/nbtheory.h \
+  /usr/local/include/openfhe.BAK/core/math/ternaryuniformgenerator.h \
+  /usr/local/include/openfhe.BAK/core/openfhecore.h \
+  /usr/local/include/openfhe.BAK/core/utils/blockAllocator/stl_allocator.h \
+  /usr/local/include/openfhe.BAK/core/utils/blockAllocator/xallocator.h \
+  /usr/local/include/openfhe.BAK/core/utils/blockAllocator/xvector.h \
+  /usr/local/include/openfhe.BAK/core/utils/caller_info.h \
+  /usr/local/include/openfhe.BAK/core/utils/debug.h \
+  /usr/local/include/openfhe.BAK/core/utils/demangle.h \
+  /usr/local/include/openfhe.BAK/core/utils/exception.h \
+  /usr/local/include/openfhe.BAK/core/utils/get-call-stack.h \
+  /usr/local/include/openfhe.BAK/core/utils/inttypes.h \
+  /usr/local/include/openfhe.BAK/core/utils/memory.h \
+  /usr/local/include/openfhe.BAK/core/utils/openfhebase64.h \
+  /usr/local/include/openfhe.BAK/core/utils/parallel.h \
+  /usr/local/include/openfhe.BAK/core/utils/prng/prng.h \
+  /usr/local/include/openfhe.BAK/core/utils/serial.h \
+  /usr/local/include/openfhe.BAK/core/utils/serializable.h \
+  /usr/local/include/openfhe.BAK/core/utils/sertype.h \
+  /usr/local/include/openfhe.BAK/core/utils/type_name.h \
+  /usr/local/include/openfhe.BAK/core/utils/utilities.h \
+  /usr/local/include/openfhe.BAK/core/version.h \
+  /usr/local/include/openfhe.BAK/pke/ciphertext-fwd.h \
+  /usr/local/include/openfhe.BAK/pke/ciphertext.h \
+  /usr/local/include/openfhe.BAK/pke/constants-defs.h \
+  /usr/local/include/openfhe.BAK/pke/constants.h \
+  /usr/local/include/openfhe.BAK/pke/cryptocontext-fwd.h \
+  /usr/local/include/openfhe.BAK/pke/cryptocontext.h \
+  /usr/local/include/openfhe.BAK/pke/cryptocontextfactory.h \
+  /usr/local/include/openfhe.BAK/pke/cryptoobject.h \
+  /usr/local/include/openfhe.BAK/pke/encoding/ckkspackedencoding.h \
+  /usr/local/include/openfhe.BAK/pke/encoding/coefpackedencoding.h \
+  /usr/local/include/openfhe.BAK/pke/encoding/encodingparams.h \
+  /usr/local/include/openfhe.BAK/pke/encoding/encodings.h \
+  /usr/local/include/openfhe.BAK/pke/encoding/packedencoding.h \
+  /usr/local/include/openfhe.BAK/pke/encoding/plaintext-fwd.h \
+  /usr/local/include/openfhe.BAK/pke/encoding/plaintext.h \
+  /usr/local/include/openfhe.BAK/pke/encoding/plaintextfactory.h \
+  /usr/local/include/openfhe.BAK/pke/encoding/stringencoding.h \
+  /usr/local/include/openfhe.BAK/pke/gen-cryptocontext.h \
+  /usr/local/include/openfhe.BAK/pke/globals.h \
+  /usr/local/include/openfhe.BAK/pke/key/evalkey-fwd.h \
+  /usr/local/include/openfhe.BAK/pke/key/evalkey.h \
+  /usr/local/include/openfhe.BAK/pke/key/evalkeyrelin-fwd.h \
+  /usr/local/include/openfhe.BAK/pke/key/evalkeyrelin.h \
+  /usr/local/include/openfhe.BAK/pke/key/key.h \
+  /usr/local/include/openfhe.BAK/pke/key/keypair.h \
+  /usr/local/include/openfhe.BAK/pke/key/privatekey-fwd.h \
+  /usr/local/include/openfhe.BAK/pke/key/privatekey.h \
+  /usr/local/include/openfhe.BAK/pke/key/publickey-fwd.h \
+  /usr/local/include/openfhe.BAK/pke/key/publickey.h \
+  /usr/local/include/openfhe.BAK/pke/keyswitch/keyswitch-base.h \
+  /usr/local/include/openfhe.BAK/pke/keyswitch/keyswitch-bv.h \
+  /usr/local/include/openfhe.BAK/pke/keyswitch/keyswitch-hybrid.h \
+  /usr/local/include/openfhe.BAK/pke/keyswitch/keyswitch-rns.h \
+  /usr/local/include/openfhe.BAK/pke/metadata.h \
+  /usr/local/include/openfhe.BAK/pke/openfhe.h \
+  /usr/local/include/openfhe.BAK/pke/scheme/bfvrns/bfvrns-advancedshe.h \
+  /usr/local/include/openfhe.BAK/pke/scheme/bfvrns/bfvrns-cryptoparameters.h \
+  /usr/local/include/openfhe.BAK/pke/scheme/bfvrns/bfvrns-fhe.h \
+  /usr/local/include/openfhe.BAK/pke/scheme/bfvrns/bfvrns-leveledshe.h \
+  /usr/local/include/openfhe.BAK/pke/scheme/bfvrns/bfvrns-multiparty.h \
+  /usr/local/include/openfhe.BAK/pke/scheme/bfvrns/bfvrns-parametergeneration.h \
+  /usr/local/include/openfhe.BAK/pke/scheme/bfvrns/bfvrns-pke.h \
+  /usr/local/include/openfhe.BAK/pke/scheme/bfvrns/bfvrns-pre.h \
+  /usr/local/include/openfhe.BAK/pke/scheme/bfvrns/bfvrns-scheme.h \
+  /usr/local/include/openfhe.BAK/pke/scheme/bfvrns/gen-cryptocontext-bfvrns-internal.h \
+  /usr/local/include/openfhe.BAK/pke/scheme/bfvrns/gen-cryptocontext-bfvrns-params.h \
+  /usr/local/include/openfhe.BAK/pke/scheme/bfvrns/gen-cryptocontext-bfvrns.h \
+  /usr/local/include/openfhe.BAK/pke/scheme/bgvrns/bgvrns-advancedshe.h \
+  /usr/local/include/openfhe.BAK/pke/scheme/bgvrns/bgvrns-cryptoparameters.h \
+  /usr/local/include/openfhe.BAK/pke/scheme/bgvrns/bgvrns-fhe.h \
+  /usr/local/include/openfhe.BAK/pke/scheme/bgvrns/bgvrns-leveledshe.h \
+  /usr/local/include/openfhe.BAK/pke/scheme/bgvrns/bgvrns-multiparty.h \
+  /usr/local/include/openfhe.BAK/pke/scheme/bgvrns/bgvrns-parametergeneration.h \
+  /usr/local/include/openfhe.BAK/pke/scheme/bgvrns/bgvrns-pke.h \
+  /usr/local/include/openfhe.BAK/pke/scheme/bgvrns/bgvrns-pre.h \
+  /usr/local/include/openfhe.BAK/pke/scheme/bgvrns/bgvrns-scheme.h \
+  /usr/local/include/openfhe.BAK/pke/scheme/bgvrns/gen-cryptocontext-bgvrns-internal.h \
+  /usr/local/include/openfhe.BAK/pke/scheme/bgvrns/gen-cryptocontext-bgvrns-params.h \
+  /usr/local/include/openfhe.BAK/pke/scheme/bgvrns/gen-cryptocontext-bgvrns.h \
+  /usr/local/include/openfhe.BAK/pke/scheme/ckksrns/ckksrns-advancedshe.h \
+  /usr/local/include/openfhe.BAK/pke/scheme/ckksrns/ckksrns-cryptoparameters.h \
+  /usr/local/include/openfhe.BAK/pke/scheme/ckksrns/ckksrns-fhe.h \
+  /usr/local/include/openfhe.BAK/pke/scheme/ckksrns/ckksrns-leveledshe.h \
+  /usr/local/include/openfhe.BAK/pke/scheme/ckksrns/ckksrns-multiparty.h \
+  /usr/local/include/openfhe.BAK/pke/scheme/ckksrns/ckksrns-parametergeneration.h \
+  /usr/local/include/openfhe.BAK/pke/scheme/ckksrns/ckksrns-pke.h \
+  /usr/local/include/openfhe.BAK/pke/scheme/ckksrns/ckksrns-pre.h \
+  /usr/local/include/openfhe.BAK/pke/scheme/ckksrns/ckksrns-scheme.h \
+  /usr/local/include/openfhe.BAK/pke/scheme/ckksrns/ckksrns-schemeswitching.h \
+  /usr/local/include/openfhe.BAK/pke/scheme/ckksrns/ckksrns-utils.h \
+  /usr/local/include/openfhe.BAK/pke/scheme/ckksrns/gen-cryptocontext-ckksrns-internal.h \
+  /usr/local/include/openfhe.BAK/pke/scheme/ckksrns/gen-cryptocontext-ckksrns-params.h \
+  /usr/local/include/openfhe.BAK/pke/scheme/ckksrns/gen-cryptocontext-ckksrns.h \
+  /usr/local/include/openfhe.BAK/pke/scheme/gen-cryptocontext-params-validation.h \
+  /usr/local/include/openfhe.BAK/pke/scheme/gen-cryptocontext-params.h \
+  /usr/local/include/openfhe.BAK/pke/scheme/scheme-id.h \
+  /usr/local/include/openfhe.BAK/pke/scheme/scheme-swch-params.h \
+  /usr/local/include/openfhe.BAK/pke/scheme/scheme-utils.h \
+  /usr/local/include/openfhe.BAK/pke/schemebase/base-advancedshe.h \
+  /usr/local/include/openfhe.BAK/pke/schemebase/base-cryptoparameters.h \
+  /usr/local/include/openfhe.BAK/pke/schemebase/base-fhe.h \
+  /usr/local/include/openfhe.BAK/pke/schemebase/base-leveledshe.h \
+  /usr/local/include/openfhe.BAK/pke/schemebase/base-multiparty.h \
+  /usr/local/include/openfhe.BAK/pke/schemebase/base-parametergeneration.h \
+  /usr/local/include/openfhe.BAK/pke/schemebase/base-pke.h \
+  /usr/local/include/openfhe.BAK/pke/schemebase/base-pre.h \
+  /usr/local/include/openfhe.BAK/pke/schemebase/base-scheme.h \
+  /usr/local/include/openfhe.BAK/pke/schemebase/decrypt-result.h \
+  /usr/local/include/openfhe.BAK/pke/schemebase/rlwe-cryptoparameters.h \
+  /usr/local/include/openfhe.BAK/pke/schemerns/rns-advancedshe.h \
+  /usr/local/include/openfhe.BAK/pke/schemerns/rns-cryptoparameters.h \
+  /usr/local/include/openfhe.BAK/pke/schemerns/rns-fhe.h \
+  /usr/local/include/openfhe.BAK/pke/schemerns/rns-leveledshe.h \
+  /usr/local/include/openfhe.BAK/pke/schemerns/rns-multiparty.h \
+  /usr/local/include/openfhe.BAK/pke/schemerns/rns-parametergeneration.h \
+  /usr/local/include/openfhe.BAK/pke/schemerns/rns-pke.h \
+  /usr/local/include/openfhe.BAK/pke/schemerns/rns-pre.h \
+  /usr/local/include/openfhe.BAK/pke/schemerns/rns-scheme.h
+
+
+/usr/local/include/openfhe.BAK/pke/schemerns/rns-scheme.h:
+
+/usr/local/include/openfhe.BAK/pke/schemerns/rns-pre.h:
+
+/usr/local/include/openfhe.BAK/pke/schemerns/rns-pke.h:
+
+/usr/local/include/openfhe.BAK/pke/schemerns/rns-leveledshe.h:
+
+/usr/local/include/openfhe.BAK/pke/schemerns/rns-cryptoparameters.h:
+
+/usr/local/include/openfhe.BAK/pke/schemebase/rlwe-cryptoparameters.h:
+
+/usr/local/include/openfhe.BAK/pke/schemebase/base-scheme.h:
+
+/usr/local/include/openfhe.BAK/pke/schemebase/base-pke.h:
+
+/usr/local/include/openfhe.BAK/pke/schemebase/base-fhe.h:
+
+/usr/local/include/openfhe.BAK/pke/scheme/scheme-utils.h:
+
+/usr/local/include/openfhe.BAK/pke/scheme/gen-cryptocontext-params-validation.h:
+
+/usr/local/include/openfhe.BAK/pke/scheme/ckksrns/gen-cryptocontext-ckksrns.h:
+
+/usr/local/include/openfhe.BAK/pke/scheme/ckksrns/gen-cryptocontext-ckksrns-params.h:
+
+/usr/local/include/openfhe.BAK/pke/scheme/ckksrns/gen-cryptocontext-ckksrns-internal.h:
+
+/usr/local/include/openfhe.BAK/pke/scheme/ckksrns/ckksrns-utils.h:
 
-/opt/homebrew/include/openfhe/pke/scheme/gen-cryptocontext-params.h:
+/usr/local/include/openfhe.BAK/pke/scheme/ckksrns/ckksrns-pre.h:
 
-/opt/homebrew/include/openfhe/pke/scheme/gen-cryptocontext-params-validation.h:
+/usr/local/include/openfhe.BAK/pke/scheme/ckksrns/ckksrns-pke.h:
 
-/opt/homebrew/include/openfhe/pke/scheme/ckksrns/gen-cryptocontext-ckksrns.h:
+/usr/local/include/openfhe.BAK/pke/scheme/ckksrns/ckksrns-parametergeneration.h:
 
-/opt/homebrew/include/openfhe/pke/scheme/ckksrns/gen-cryptocontext-ckksrns-internal.h:
+/usr/local/include/openfhe.BAK/pke/scheme/ckksrns/ckksrns-multiparty.h:
 
-/opt/homebrew/include/openfhe/pke/scheme/ckksrns/ckksrns-scheme.h:
+/usr/local/include/openfhe.BAK/pke/scheme/ckksrns/ckksrns-fhe.h:
 
-/opt/homebrew/include/openfhe/pke/scheme/ckksrns/ckksrns-pre.h:
+/usr/local/include/openfhe.BAK/pke/scheme/bgvrns/gen-cryptocontext-bgvrns-params.h:
 
-/opt/homebrew/include/openfhe/pke/scheme/ckksrns/ckksrns-parametergeneration.h:
+/usr/local/include/openfhe.BAK/pke/scheme/bgvrns/gen-cryptocontext-bgvrns-internal.h:
 
-/opt/homebrew/include/openfhe/pke/scheme/ckksrns/ckksrns-leveledshe.h:
+/usr/local/include/openfhe.BAK/pke/scheme/bgvrns/bgvrns-scheme.h:
 
-/opt/homebrew/include/openfhe/pke/scheme/ckksrns/ckksrns-fhe.h:
+/usr/local/include/openfhe.BAK/pke/scheme/bgvrns/bgvrns-pke.h:
 
-/opt/homebrew/include/openfhe/pke/scheme/ckksrns/ckksrns-cryptoparameters.h:
+/usr/local/include/openfhe.BAK/pke/scheme/bgvrns/bgvrns-leveledshe.h:
 
-/opt/homebrew/include/openfhe/pke/scheme/bgvrns/gen-cryptocontext-bgvrns-params.h:
+/usr/local/include/openfhe.BAK/pke/scheme/bgvrns/bgvrns-fhe.h:
 
-/opt/homebrew/include/openfhe/pke/scheme/bgvrns/bgvrns-scheme.h:
+/usr/local/include/openfhe.BAK/pke/scheme/bfvrns/gen-cryptocontext-bfvrns-internal.h:
 
-/opt/homebrew/include/openfhe/pke/scheme/bgvrns/bgvrns-pre.h:
+/usr/local/include/openfhe.BAK/pke/scheme/bfvrns/bfvrns-pke.h:
 
-/opt/homebrew/include/openfhe/pke/scheme/bgvrns/bgvrns-pke.h:
+/usr/local/include/openfhe.BAK/pke/scheme/bfvrns/bfvrns-multiparty.h:
 
-/opt/homebrew/include/openfhe/pke/scheme/bgvrns/bgvrns-parametergeneration.h:
+/usr/local/include/openfhe.BAK/pke/scheme/bfvrns/bfvrns-leveledshe.h:
 
-/opt/homebrew/include/openfhe/pke/scheme/bgvrns/bgvrns-multiparty.h:
+/usr/local/include/openfhe.BAK/pke/scheme/bfvrns/bfvrns-cryptoparameters.h:
 
-/opt/homebrew/include/openfhe/pke/scheme/bgvrns/bgvrns-fhe.h:
+/usr/local/include/openfhe.BAK/pke/metadata.h:
 
-/opt/homebrew/include/openfhe/pke/scheme/bfvrns/bfvrns-scheme.h:
+/usr/local/include/openfhe.BAK/pke/keyswitch/keyswitch-bv.h:
 
-/opt/homebrew/include/openfhe/pke/scheme/bfvrns/bfvrns-pre.h:
+/usr/local/include/openfhe.BAK/pke/key/publickey.h:
 
-/opt/homebrew/include/openfhe/pke/scheme/bfvrns/bfvrns-fhe.h:
+/usr/local/include/openfhe.BAK/pke/key/publickey-fwd.h:
 
-/opt/homebrew/include/openfhe/pke/scheme/bfvrns/bfvrns-advancedshe.h:
+/usr/local/include/openfhe.BAK/pke/key/privatekey.h:
 
-/opt/homebrew/include/openfhe/pke/key/publickey-fwd.h:
+/usr/local/include/openfhe.BAK/pke/key/privatekey-fwd.h:
 
-/opt/homebrew/include/openfhe/pke/key/privatekey.h:
+/usr/local/include/openfhe.BAK/pke/key/keypair.h:
 
-/opt/homebrew/include/openfhe/pke/key/keypair.h:
+/usr/local/include/openfhe.BAK/pke/key/evalkeyrelin.h:
 
-/opt/homebrew/include/openfhe/pke/key/key.h:
+/usr/local/include/openfhe.BAK/pke/key/evalkeyrelin-fwd.h:
 
-/opt/homebrew/include/openfhe/pke/key/evalkeyrelin.h:
+/usr/local/include/openfhe.BAK/pke/key/evalkey-fwd.h:
 
-/opt/homebrew/include/openfhe/pke/gen-cryptocontext.h:
+/usr/local/include/openfhe.BAK/pke/globals.h:
 
-/opt/homebrew/include/openfhe/pke/encoding/stringencoding.h:
+/usr/local/include/openfhe.BAK/pke/gen-cryptocontext.h:
 
-/opt/homebrew/include/openfhe/pke/encoding/plaintext.h:
+/usr/local/include/openfhe.BAK/pke/encoding/plaintext.h:
 
-/opt/homebrew/include/openfhe/pke/encoding/plaintext-fwd.h:
+/usr/local/include/openfhe.BAK/pke/encoding/encodings.h:
 
-/opt/homebrew/include/openfhe/pke/encoding/packedencoding.h:
+/usr/local/include/openfhe.BAK/pke/encoding/ckkspackedencoding.h:
 
-/opt/homebrew/include/openfhe/pke/encoding/encodings.h:
+/usr/local/include/openfhe.BAK/pke/cryptoobject.h:
 
-/opt/homebrew/include/openfhe/pke/encoding/coefpackedencoding.h:
+/usr/local/include/openfhe.BAK/pke/cryptocontextfactory.h:
 
-/opt/homebrew/include/openfhe/pke/encoding/ckkspackedencoding.h:
+/usr/local/include/openfhe.BAK/pke/constants.h:
 
-/opt/homebrew/include/openfhe/pke/cryptoobject.h:
+/usr/local/include/openfhe.BAK/pke/ciphertext.h:
 
-/opt/homebrew/include/openfhe/pke/cryptocontextfactory.h:
+/usr/local/include/openfhe.BAK/pke/ciphertext-fwd.h:
 
-/opt/homebrew/include/openfhe/pke/cryptocontext.h:
+/usr/local/include/openfhe.BAK/core/version.h:
 
-/opt/homebrew/include/openfhe/pke/constants.h:
+/usr/local/include/openfhe.BAK/core/utils/serializable.h:
 
-/opt/homebrew/include/openfhe/pke/constants-defs.h:
+/usr/local/include/openfhe.BAK/core/utils/prng/prng.h:
 
-/opt/homebrew/include/openfhe/core/version.h:
+/usr/local/include/openfhe.BAK/core/utils/memory.h:
 
-/opt/homebrew/include/openfhe/core/utils/utilities.h:
+/usr/local/include/openfhe.BAK/core/utils/inttypes.h:
 
-/opt/homebrew/include/openfhe/core/utils/type_name.h:
+/usr/local/include/openfhe.BAK/core/utils/get-call-stack.h:
 
-/opt/homebrew/include/openfhe/core/utils/prng/prng.h:
+/usr/local/include/openfhe.BAK/core/utils/debug.h:
 
-/opt/homebrew/include/openfhe/core/utils/openfhebase64.h:
+/usr/local/include/openfhe.BAK/core/utils/caller_info.h:
 
-/opt/homebrew/include/openfhe/core/utils/get-call-stack.h:
+/usr/local/include/openfhe.BAK/core/utils/blockAllocator/xallocator.h:
 
-/opt/homebrew/include/openfhe/core/utils/demangle.h:
+/usr/local/include/openfhe.BAK/pke/constants-defs.h:
 
-/opt/homebrew/include/openfhe/core/utils/caller_info.h:
+/usr/local/include/openfhe.BAK/core/openfhecore.h:
 
-/opt/homebrew/include/openfhe/core/utils/blockAllocator/xallocator.h:
+/usr/local/include/openfhe.BAK/core/math/nbtheory.h:
 
-/opt/homebrew/include/openfhe/core/openfhecore.h:
+/usr/local/include/openfhe.BAK/core/math/nbtheory-impl.h:
 
-/opt/homebrew/include/openfhe/core/math/ternaryuniformgenerator.h:
+/usr/local/include/openfhe.BAK/core/math/matrix.h:
 
-/opt/homebrew/include/openfhe/core/math/nbtheory.h:
+/usr/local/include/openfhe.BAK/core/math/hal/vector.h:
 
-/opt/homebrew/include/openfhe/core/math/matrix.h:
+/usr/local/include/openfhe.BAK/core/math/hal/intnat/transformnat.h:
 
-/opt/homebrew/include/openfhe/core/math/hal/vector.h:
+/usr/local/include/openfhe.BAK/core/math/hal/intnat/transformnat-impl.h:
 
-/opt/homebrew/include/openfhe/core/math/hal/intnat/ubintnat.h:
+/usr/local/include/openfhe.BAK/core/math/hal/integer.h:
 
-/opt/homebrew/include/openfhe/core/math/hal/intnat/transformnat.h:
+/usr/local/include/openfhe.BAK/core/math/hal/bigintntl/backendntl.h:
 
-/opt/homebrew/include/openfhe/core/math/hal/intnat/transformnat-impl.h:
+/usr/local/include/openfhe.BAK/core/math/hal/bigintfxd/backendfxd.h:
 
-/opt/homebrew/include/openfhe/core/math/hal/integer.h:
+/usr/local/include/openfhe.BAK/core/math/hal/bigintdyn/ubintdyn.h:
 
-/opt/homebrew/include/openfhe/core/math/hal/bigintdyn/transformdyn-impl.h:
+/usr/local/include/openfhe.BAK/core/math/hal/bigintdyn/mubintvecdyn.h:
 
-/opt/homebrew/include/openfhe/core/math/distrgen.h:
+/usr/local/include/openfhe.BAK/core/math/hal/bigintbackend.h:
 
-/opt/homebrew/include/openfhe/core/math/discreteuniformgenerator.h:
+/usr/local/include/openfhe.BAK/core/math/discreteuniformgenerator.h:
 
-/opt/homebrew/include/openfhe/core/math/discretegaussiangeneratorgeneric.h:
+/usr/local/include/openfhe.BAK/core/math/discretegaussiangeneratorgeneric.h:
 
-/opt/homebrew/include/openfhe/core/math/distributiongenerator.h:
+/usr/local/include/openfhe.BAK/core/math/binaryuniformgenerator.h:
 
-/opt/homebrew/include/openfhe/core/math/discretegaussiangenerator.h:
+/usr/local/include/openfhe.BAK/pke/scheme/bgvrns/gen-cryptocontext-bgvrns.h:
 
-/opt/homebrew/include/openfhe/core/math/binaryuniformgenerator.h:
+/usr/local/include/openfhe.BAK/core/lattice/stdlatticeparms.h:
 
-/opt/homebrew/include/openfhe/core/lattice/stdlatticeparms.h:
+/usr/local/include/openfhe.BAK/core/lattice/lat-hal.h:
 
-/opt/homebrew/include/openfhe/core/lattice/lat-hal.h:
+/usr/local/include/openfhe.BAK/core/lattice/ilelement.h:
 
-/opt/homebrew/include/openfhe/core/lattice/ilelement.h:
+/usr/local/include/openfhe.BAK/core/lattice/hal/lat-backend.h:
 
-/opt/homebrew/include/openfhe/core/lattice/hal/poly-interface.h:
+/usr/local/include/openfhe.BAK/core/lattice/hal/elemparams.h:
 
-/opt/homebrew/include/openfhe/core/lattice/hal/elemparams.h:
+/usr/local/include/openfhe.BAK/core/lattice/hal/default/poly.h:
 
-/opt/homebrew/include/openfhe/core/lattice/hal/default/poly.h:
+/usr/local/include/openfhe.BAK/core/lattice/hal/default/ildcrtparams.h:
 
-/opt/homebrew/include/openfhe/core/lattice/hal/default/dcrtpoly.h:
+/usr/local/include/openfhe.BAK/core/lattice/hal/dcrtpoly-interface.h:
 
-/opt/homebrew/include/openfhe/core/lattice/hal/dcrtpoly-interface.h:
+/usr/local/include/openfhe.BAK/core/lattice/constants-lattice.h:
 
-/opt/homebrew/include/openfhe/core/lattice/constants-lattice.h:
+/usr/local/include/openfhe.BAK/core/config_core.h:
 
-/opt/homebrew/include/openfhe/core/config_core.h:
+/usr/local/include/openfhe.BAK/cereal/types/string.hpp:
 
-/opt/homebrew/include/openfhe/binfhe/rlwe-ciphertext.h:
+/usr/local/include/openfhe.BAK/cereal/types/polymorphic.hpp:
 
-/opt/homebrew/include/openfhe/binfhe/rgsw-evalkey.h:
+/usr/local/include/openfhe.BAK/cereal/types/memory.hpp:
 
-/opt/homebrew/include/openfhe/binfhe/rgsw-cryptoparameters.h:
+/usr/local/include/openfhe.BAK/cereal/types/map.hpp:
 
-/opt/homebrew/include/openfhe/binfhe/rgsw-acckey.h:
+/usr/local/include/openfhe.BAK/cereal/types/concepts/pair_associative_container.hpp:
 
-/opt/homebrew/include/openfhe/binfhe/rgsw-acc-dm.h:
+/usr/local/include/openfhe.BAK/cereal/specialize.hpp:
 
-/opt/homebrew/include/openfhe/binfhe/rgsw-acc-cggi.h:
+/usr/local/include/openfhe.BAK/cereal/macros.hpp:
 
-/opt/homebrew/include/openfhe/binfhe/lwe-privatekey.h:
+/usr/local/include/openfhe.BAK/core/math/distrgen.h:
 
-/opt/homebrew/include/openfhe/binfhe/lwe-keypair.h:
+/usr/local/include/openfhe.BAK/cereal/external/rapidjson/prettywriter.h:
 
-/opt/homebrew/include/openfhe/binfhe/lwe-keypair-fwd.h:
+/usr/local/include/openfhe.BAK/core/math/math-hal.h:
 
-/opt/homebrew/include/openfhe/binfhe/lwe-cryptoparameters.h:
+/usr/local/include/openfhe.BAK/cereal/external/rapidjson/memorystream.h:
 
-/opt/homebrew/include/openfhe/binfhe/lwe-ciphertext.h:
+/usr/local/include/openfhe.BAK/cereal/external/rapidjson/internal/strtod.h:
 
-/opt/homebrew/include/openfhe/binfhe/binfhe-constants.h:
+/usr/local/include/openfhe.BAK/pke/scheme/ckksrns/ckksrns-advancedshe.h:
 
-/opt/homebrew/include/cereal/types/memory.hpp:
+/usr/local/include/openfhe.BAK/cereal/external/rapidjson/internal/stack.h:
 
-/opt/homebrew/include/cereal/types/map.hpp:
+/usr/local/include/openfhe.BAK/cereal/external/rapidjson/internal/itoa.h:
 
-/opt/homebrew/include/openfhe/pke/scheme/scheme-swch-params.h:
+/usr/local/include/openfhe.BAK/cereal/external/rapidjson/internal/biginteger.h:
 
-/opt/homebrew/include/cereal/types/concepts/pair_associative_container.hpp:
+/usr/local/include/openfhe.BAK/cereal/external/rapidjson/rapidjson.h:
 
-/opt/homebrew/include/cereal/types/common.hpp:
+/usr/local/include/openfhe.BAK/cereal/external/rapidjson/ostreamwrapper.h:
 
-/opt/homebrew/include/cereal/types/base_class.hpp:
+/usr/local/include/openfhe.BAK/cereal/external/rapidjson/encodings.h:
 
-/opt/homebrew/include/cereal/external/rapidjson/reader.h:
+/usr/local/include/openfhe.BAK/cereal/external/base64.hpp:
 
-/opt/homebrew/include/cereal/external/rapidjson/prettywriter.h:
+/usr/local/include/openfhe.BAK/cereal/details/traits.hpp:
 
-/opt/homebrew/include/openfhe/pke/scheme/ckksrns/ckksrns-utils.h:
+/usr/local/include/openfhe.BAK/cereal/details/polymorphic_impl_fwd.hpp:
 
-/opt/homebrew/include/cereal/external/rapidjson/memorystream.h:
+/usr/local/include/openfhe.BAK/pke/encoding/plaintext-fwd.h:
 
-/opt/homebrew/include/cereal/external/rapidjson/istreamwrapper.h:
+/usr/local/include/openfhe.BAK/cereal/details/polymorphic_impl.hpp:
 
-/opt/homebrew/include/openfhe/pke/globals.h:
+/usr/local/include/openfhe.BAK/cereal/details/helpers.hpp:
 
-/opt/homebrew/include/cereal/types/polymorphic.hpp:
+/usr/local/include/openfhe.BAK/cereal/archives/portable_binary.hpp:
 
-/opt/homebrew/include/cereal/external/rapidjson/internal/swap.h:
+/usr/local/include/openfhe.BAK/cereal/access.hpp:
 
-/opt/homebrew/include/cereal/external/rapidjson/internal/strtod.h:
+/usr/local/include/openfhe.BAK/binfhe/rgsw-cryptoparameters.h:
 
-/opt/homebrew/include/cereal/external/rapidjson/internal/strfunc.h:
+/usr/local/include/openfhe.BAK/binfhe/rgsw-acckey.h:
 
-/opt/homebrew/include/cereal/external/rapidjson/internal/dtoa.h:
+/usr/local/include/openfhe.BAK/binfhe/rgsw-acc-dm.h:
 
-/opt/homebrew/include/cereal/external/rapidjson/internal/biginteger.h:
+/usr/local/include/openfhe.BAK/core/lattice/hal/poly-interface.h:
 
-/opt/homebrew/include/cereal/external/rapidjson/error/error.h:
+/usr/local/include/openfhe.BAK/binfhe/rgsw-acc-cggi.h:
 
-/opt/homebrew/include/cereal/external/rapidjson/rapidjson.h:
+/usr/local/include/openfhe.BAK/binfhe/lwe-publickey.h:
 
-/opt/homebrew/include/cereal/external/rapidjson/encodedstream.h:
+/usr/local/include/openfhe.BAK/binfhe/lwe-privatekey.h:
 
-/opt/homebrew/include/cereal/external/rapidjson/document.h:
+/usr/local/include/openfhe.BAK/binfhe/lwe-privatekey-fwd.h:
 
-/opt/homebrew/include/cereal/details/util.hpp:
+/usr/local/include/openfhe.BAK/binfhe/lwe-pke.h:
 
-/opt/homebrew/include/cereal/details/polymorphic_impl_fwd.hpp:
+/usr/local/include/openfhe.BAK/cereal/external/rapidjson/internal/swap.h:
 
-/opt/homebrew/include/cereal/details/polymorphic_impl.hpp:
+/usr/local/include/openfhe.BAK/binfhe/lwe-keyswitchkey.h:
 
-/opt/homebrew/include/cereal/cereal.hpp:
+/usr/local/include/openfhe.BAK/binfhe/lwe-keyswitchkey-fwd.h:
 
-/opt/homebrew/include/cereal/archives/portable_binary.hpp:
+/usr/local/include/openfhe.BAK/core/utils/blockAllocator/xvector.h:
 
-/opt/homebrew/include/cereal/access.hpp:
+/usr/local/include/openfhe.BAK/binfhe/lwe-keypair-fwd.h:
+
+/usr/local/include/openfhe.BAK/binfhe/lwe-cryptoparameters.h:
+
+/usr/local/include/openfhe.BAK/cereal/types/common.hpp:
+
+/usr/local/include/openfhe.BAK/binfhe/lwe-ciphertext.h:
+
+/usr/local/include/openfhe.BAK/binfhe/lwe-ciphertext-fwd.h:
+
+/usr/local/include/openfhe.BAK/binfhe/binfhecontext.h:
+
+/usr/local/include/openfhe.BAK/binfhe/binfhe-base-scheme.h:
+
+/usr/local/include/openfhe.BAK/pke/schemerns/rns-parametergeneration.h:
 
 /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h:
 
@@ -1388,17 +1402,15 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_offsetof.h:
 
+/usr/local/include/openfhe.BAK/pke/encoding/coefpackedencoding.h:
+
 /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_nullptr_t.h:
 
 /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_null.h:
 
 /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stdarg___gnuc_va_list.h:
 
-/opt/homebrew/include/cereal/external/rapidjson/internal/ieee754.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/xlocale/_wctype.h:
-
-/opt/homebrew/include/openfhe/pke/scheme/ckksrns/gen-cryptocontext-ckksrns-params.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/xlocale/_wchar.h:
 
@@ -1408,17 +1420,15 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/xlocale/_inttypes.h:
 
-/opt/homebrew/include/openfhe/pke/schemebase/base-fhe.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/xlocale/___wctype.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/xlocale.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/time.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/syslimits.h:
+/usr/local/include/openfhe.BAK/cereal/archives/json.hpp:
 
-/opt/homebrew/include/openfhe/core/utils/blockAllocator/stl_allocator.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/syslimits.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/stdio.h:
 
@@ -1426,9 +1436,13 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/errno.h:
 
+/usr/local/include/openfhe.BAK/pke/scheme/bfvrns/gen-cryptocontext-bfvrns.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_wchar_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_va_list.h:
+
+/usr/local/include/openfhe.BAK/cereal/external/rapidjson/internal/strfunc.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_useconds_t.h:
 
@@ -1450,8 +1464,6 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_size_t.h:
 
-/opt/homebrew/include/cereal/types/vector.hpp:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_sigset_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_sigaltstack.h:
@@ -1468,13 +1480,13 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_key_t.h:
 
-/opt/homebrew/include/openfhe/binfhe/lwe-privatekey-fwd.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_intptr_t.h:
 
-/opt/homebrew/include/openfhe/pke/schemerns/rns-advancedshe.h:
+/usr/local/include/openfhe.BAK/binfhe/rgsw-evalkey.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_int8_t.h:
+
+/usr/local/include/openfhe.BAK/pke/scheme/scheme-swch-params.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_int32_t.h:
 
@@ -1492,13 +1504,13 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_fsfilcnt_t.h:
 
-/opt/homebrew/include/openfhe/binfhe/lwe-pke.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_fsblkcnt_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_fd_setsize.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_dev_t.h:
+
+/usr/local/include/openfhe.BAK/pke/scheme/bgvrns/bgvrns-multiparty.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_ct_rune_t.h:
 
@@ -1516,7 +1528,7 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_attr_t.h:
 
-/opt/homebrew/include/openfhe/binfhe/rgsw-acc-lmkcdey.h:
+/usr/local/include/openfhe.BAK/binfhe/lwe-publickey-fwd.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_endian.h:
 
@@ -1525,8 +1537,6 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/__endian.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_blkcnt_t.h:
-
-/opt/homebrew/include/cereal/external/rapidjson/allocators.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdlib.h:
 
@@ -1544,9 +1554,7 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/machine/_types.h:
 
-/opt/homebrew/include/openfhe/pke/scheme/bfvrns/gen-cryptocontext-bfvrns.h:
-
-/opt/homebrew/include/openfhe/core/math/hal/basicint.h:
+/usr/local/include/openfhe.BAK/core/utils/demangle.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/libkern/arm/_OSByteOrder.h:
 
@@ -1554,9 +1562,9 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/libkern/_OSByteOrder.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h:
+/usr/local/include/openfhe.BAK/pke/cryptocontext.h:
 
-/opt/homebrew/include/openfhe/pke/keyswitch/keyswitch-hybrid.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/inttypes.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__math/exponential_functions.h:
 
@@ -1566,13 +1574,13 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_fd_set.h:
 
-/opt/homebrew/include/openfhe/pke/scheme/bgvrns/bgvrns-advancedshe.h:
+/usr/local/include/openfhe.BAK/core/utils/openfhebase64.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/machine/types.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/vector:
 
-/opt/homebrew/include/openfhe/binfhe/lwe-keyswitchkey.h:
+/usr/local/include/openfhe.BAK/pke/scheme/gen-cryptocontext-params.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_void.h:
 
@@ -1626,9 +1634,9 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/numeric:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream:
+/usr/local/include/openfhe.BAK/pke/key/key.h:
 
-/opt/homebrew/include/openfhe/core/utils/blockAllocator/xvector.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iosfwd:
 
@@ -1639,8 +1647,6 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/set:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/math.h:
-
-/opt/homebrew/include/openfhe/binfhe/rgsw-acc.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/ostream.h:
 
@@ -1656,11 +1662,7 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/format:
 
-/opt/homebrew/include/openfhe/core/utils/parallel.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/execution:
-
-/opt/homebrew/include/openfhe/core/utils/exception.h:
 
 /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stdarg___va_copy.h:
 
@@ -1698,17 +1700,15 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__vector/swap.h:
 
+/usr/local/include/openfhe.BAK/cereal/details/util.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_in_port_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__vector/container_traits.h:
 
-/opt/homebrew/include/openfhe/core/math/nbtheory-impl.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/in_out_result.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__variant/monostate.h:
-
-/opt/homebrew/include/openfhe/binfhe/binfhe-base-params.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/unreachable.h:
 
@@ -1740,9 +1740,13 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/declval.h:
 
+/usr/local/include/openfhe.BAK/pke/encoding/packedencoding.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/convert_to_integral.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/void_t.h:
+
+/usr/local/include/openfhe.BAK/cereal/types/vector.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/underlying_type.h:
 
@@ -1755,8 +1759,6 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/strip_signature.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_pointer.h:
-
-/opt/homebrew/include/cereal/details/traits.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_extent.h:
 
@@ -1796,15 +1798,13 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_trivially_relocatable.h:
 
-/opt/homebrew/include/openfhe/pke/scheme/bfvrns/bfvrns-leveledshe.h:
-
-/opt/homebrew/include/openfhe/core/math/hal/bigintdyn/mubintvecdyn.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/allocator_destructor.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/machine/_mcontext.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_trivially_lexicographically_comparable.h:
+
+/usr/local/include/openfhe.BAK/pke/cryptocontext-fwd.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator.h:
 
@@ -1812,9 +1812,13 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_trivially_assignable.h:
 
+/usr/local/include/openfhe.BAK/cereal/external/rapidjson/stringbuffer.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__exception/terminate.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_swappable.h:
+
+/usr/local/include/openfhe.BAK/pke/schemebase/base-advancedshe.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/invoke.h:
 
@@ -1828,6 +1832,8 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_reference_wrapper.h:
 
+/usr/local/include/openfhe.BAK/cereal/external/rapidjson/writer.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_reference.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/u8path.h:
@@ -1838,7 +1844,7 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_polymorphic.h:
 
-/opt/homebrew/include/openfhe/pke/schemebase/decrypt-result.h:
+/usr/local/include/openfhe.BAK/cereal/external/rapidjson/document.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_pointer.h:
 
@@ -1850,7 +1856,9 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_nothrow_destructible.h:
 
-/opt/homebrew/include/openfhe/binfhe/binfhe-base-scheme.h:
+/usr/local/include/openfhe.BAK/core/utils/exception.h:
+
+/usr/local/include/openfhe.BAK/core/math/hal/bigintdyn/transformdyn.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/unordered_set:
 
@@ -1880,25 +1888,21 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/streambuf:
 
-/opt/homebrew/include/openfhe/core/utils/debug.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/make_signed.h:
 
-/opt/homebrew/include/cereal/external/rapidjson/internal/itoa.h:
+/usr/local/include/openfhe.BAK/cereal/external/rapidjson/allocators.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_floating_point.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_final.h:
+
+/usr/local/include/openfhe.BAK/core/math/hal/basicint.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/container_traits.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_execution_policy.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_destructible.h:
-
-/opt/homebrew/include/openfhe/pke/scheme/bfvrns/gen-cryptocontext-bfvrns-params.h:
-
-/opt/homebrew/include/cereal/external/base64.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_core_convertible.h:
 
@@ -1907,6 +1911,8 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_convertible.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string_view:
+
+/usr/local/include/openfhe.BAK/pke/scheme/bgvrns/bgvrns-parametergeneration.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cstdarg:
 
@@ -1922,8 +1928,6 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_compound.h:
 
-/opt/homebrew/include/cereal/external/rapidjson/ostreamwrapper.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_char_like_type.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_base_of.h:
@@ -1931,8 +1935,6 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/unary_negate.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_arithmetic.h:
-
-/opt/homebrew/include/openfhe/core/math/hal/bigintntl/backendntl.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_always_bitcastable.h:
 
@@ -1978,8 +1980,6 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/conjunction.h:
 
-/opt/homebrew/include/openfhe/pke/keyswitch/keyswitch-bv.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/conditional.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/common_reference.h:
@@ -2001,8 +2001,6 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/aligned_storage.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_rvalue_reference.h:
-
-/opt/homebrew/include/openfhe/pke/metadata.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h:
 
@@ -2046,11 +2044,15 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/system_error.h:
 
+/usr/local/include/openfhe.BAK/cereal/external/rapidjson/internal/dtoa.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_empty.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/error_condition.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/error_category.h:
+
+/usr/local/include/openfhe.BAK/cereal/external/rapidjson/internal/ieee754.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/errc.h:
 
@@ -2063,6 +2065,8 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/tuple:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__std_mbstate_t.h:
+
+/usr/local/include/openfhe.BAK/core/utils/blockAllocator/stl_allocator.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__split_buffer:
 
@@ -2078,15 +2082,11 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/promote.h:
 
-/opt/homebrew/include/openfhe/pke/key/evalkeyrelin-fwd.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/size.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/sort_heap.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/has_virtual_destructor.h:
-
-/opt/homebrew/include/openfhe/pke/key/evalkey.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/merge.h:
 
@@ -2096,11 +2096,11 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_constant_evaluated.h:
 
+/usr/local/include/openfhe.BAK/pke/scheme/scheme-id.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/equal_range.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/enable_borrowed_range.h:
-
-/opt/homebrew/include/openfhe/core/math/hal/bigintdyn/ubintdyn.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__atomic/memory_order.h:
 
@@ -2122,15 +2122,11 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/access.h:
 
-/opt/homebrew/include/openfhe/core/utils/sertype.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_u_int8_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/uniform_random_bit_generator.h:
 
-/opt/homebrew/include/openfhe/pke/scheme/bgvrns/bgvrns-cryptoparameters.h:
-
-/opt/homebrew/include/openfhe/core/lattice/hal/lat-backend.h:
+/usr/local/include/openfhe.BAK/pke/schemerns/rns-advancedshe.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/identity.h:
 
@@ -2154,6 +2150,8 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/log2.h:
 
+/usr/local/include/openfhe.BAK/core/math/hal/nativeintbackend.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/linear_congruential_engine.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/is_valid.h:
@@ -2166,7 +2164,7 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/fisher_f_distribution.h:
 
-/opt/homebrew/include/cereal/details/static_object.hpp:
+/usr/local/include/openfhe.BAK/binfhe/binfhe-constants.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iterator:
 
@@ -2178,6 +2176,8 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/independent_bits_engine.h:
 
+/usr/local/include/openfhe.BAK/core/math/hal/intnat/mubintvecnat.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/default_random_engine.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/clamp_to_integral.h:
@@ -2188,11 +2188,13 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/as_const.h:
 
+/usr/local/include/openfhe.BAK/pke/schemebase/base-leveledshe.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/binomial_distribution.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/bernoulli_distribution.h:
+/usr/local/include/openfhe.BAK/pke/encoding/plaintextfactory.h:
 
-/opt/homebrew/include/openfhe/pke/keyswitch/keyswitch-base.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/bernoulli_distribution.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_size.h:
 
@@ -2212,7 +2214,7 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/pstl.h:
 
-/opt/homebrew/include/openfhe/pke/openfhe.h:
+/usr/local/include/openfhe.BAK/pke/schemebase/decrypt-result.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/partial_sum.h:
 
@@ -2224,19 +2226,17 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/iota.h:
 
+/usr/local/include/openfhe.BAK/pke/scheme/bfvrns/bfvrns-advancedshe.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/inclusive_scan.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/print:
 
-/opt/homebrew/include/cereal/types/string.hpp:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/unreachable_sentinel.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__new/nothrow_t.h:
-
-/opt/homebrew/include/openfhe/pke/encoding/plaintextfactory.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__new/new_handler.h:
 
@@ -2260,6 +2260,8 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_mutex_t.h:
 
+/usr/local/include/openfhe.BAK/core/math/ternaryuniformgenerator.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_nl_item.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/next_permutation.h:
@@ -2268,13 +2270,13 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory_resource/memory_resource.h:
 
-/opt/homebrew/include/openfhe/pke/schemerns/rns-leveledshe.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/segmented_iterator.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/lexicographical_compare.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/uninitialized_algorithms.h:
+
+/usr/local/include/openfhe.BAK/cereal/cereal.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/id.h:
 
@@ -2286,11 +2288,11 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/make_projected.h:
 
+/usr/local/include/openfhe.BAK/binfhe/rgsw-acc.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/tag_types.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/set_intersection.h:
-
-/opt/homebrew/include/openfhe/core/lattice/hal/default/ilparams.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/out_ptr.h:
 
@@ -2298,21 +2300,17 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max.h:
 
-/opt/homebrew/include/openfhe/pke/scheme/ckksrns/ckksrns-pke.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/allocation_guard.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/deque.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/align.h:
 
-/opt/homebrew/include/openfhe/pke/key/evalkey-fwd.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__math/trigonometric_functions.h:
 
-/opt/homebrew/include/openfhe/core/utils/inttypes.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:
+
+/usr/local/include/openfhe.BAK/cereal/details/static_object.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__math/traits.h:
 
@@ -2322,17 +2320,11 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/concepts:
 
-/opt/homebrew/include/openfhe/core/math/hal/bigintdyn/transformdyn.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__math/roots.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/has_unique_object_representation.h:
 
-/opt/homebrew/include/cereal/external/rapidjson/internal/meta.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__math/remainder.h:
-
-/opt/homebrew/include/openfhe/core/math/hal/bigintdyn/backenddyn.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/directory_options.h:
 
@@ -2360,13 +2352,13 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_uint32_t.h:
 
+/usr/local/include/openfhe.BAK/binfhe/rgsw-acc-lmkcdey.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__math/fma.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale_dir/support/apple.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/pointer_to_binary_function.h:
-
-/opt/homebrew/include/openfhe/core/math/hal/nativeintbackend.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__math/fdim.h:
 
@@ -2399,6 +2391,8 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/file_status.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/wrap_iter.h:
+
+/usr/local/include/openfhe.BAK/pke/schemebase/base-multiparty.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__atomic/atomic.h:
 
@@ -2442,8 +2436,6 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/front_insert_iterator.h:
 
-/opt/homebrew/include/openfhe/pke/keyswitch/keyswitch-rns.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__atomic/atomic_sync.h:
@@ -2452,7 +2444,11 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/pair.h:
 
+/usr/local/include/openfhe.BAK/pke/scheme/bgvrns/bgvrns-advancedshe.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/erase_if_container.h:
+
+/usr/local/include/openfhe.BAK/core/math/discretegaussiangenerator.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/minmax.h:
 
@@ -2468,8 +2464,6 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/distance.h:
 
-/opt/homebrew/include/openfhe/core/math/hal/transform.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/invocable.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_fd_clr.h:
@@ -2480,9 +2474,9 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/map:
 
-/opt/homebrew/include/openfhe/binfhe/binfhecontext.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/data.h:
+
+/usr/local/include/openfhe.BAK/pke/keyswitch/keyswitch-base.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/concepts.h:
 
@@ -2502,21 +2496,21 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdlib.h:
 
-/opt/homebrew/include/openfhe/pke/scheme/bfvrns/bfvrns-multiparty.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/variant.h:
-
-/opt/homebrew/include/openfhe/pke/scheme/bfvrns/gen-cryptocontext-bfvrns-internal.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/lower_bound.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/tuple.h:
+
+/usr/local/include/openfhe.BAK/core/math/hal/bigintdyn/transformdyn-impl.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/simd_utils.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/subrange.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_union.h:
+
+/usr/local/include/openfhe.BAK/pke/scheme/bgvrns/bgvrns-cryptoparameters.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/string.h:
 
@@ -2525,8 +2519,6 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/sstream.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/queue.h:
-
-/opt/homebrew/include/openfhe/pke/scheme/ckksrns/ckksrns-schemeswitching.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__string/constexpr_c_functions.h:
 
@@ -2542,17 +2534,11 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/reverse_access.h:
 
-/opt/homebrew/include/openfhe/pke/scheme/scheme-id.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/totally_ordered.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/fstream.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/complex.h:
-
-/opt/homebrew/include/openfhe/pke/schemebase/base-parametergeneration.h:
-
-/opt/homebrew/include/openfhe/core/utils/memory.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/unary_function.h:
 
@@ -2561,8 +2547,6 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/runetype.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_locale.h:
-
-/opt/homebrew/include/cereal/external/rapidjson/internal/pow10.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/reverse_iterator.h:
 
@@ -2574,9 +2558,13 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/element_count.h:
 
-/opt/homebrew/include/openfhe/pke/cryptocontext-fwd.h:
+/usr/local/include/openfhe.BAK/pke/key/evalkey.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/uses_allocator.h:
+
+/usr/local/include/openfhe.BAK/core/lattice/hal/default/dcrtpoly.h:
+
+/usr/local/include/openfhe.BAK/cereal/external/rapidjson/internal/meta.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/prev_permutation.h:
 
@@ -2586,11 +2574,11 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/function.h:
 
+/usr/local/include/openfhe.BAK/pke/scheme/bfvrns/bfvrns-parametergeneration.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_uid_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/mem_fun_ref.h:
-
-/opt/homebrew/include/openfhe/core/math/math-hal.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/pthread/qos.h:
 
@@ -2607,8 +2595,6 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stdarg_va_copy.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/find_end.h:
-
-/opt/homebrew/include/openfhe/core/math/hal/bigintbackend.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/appleapiopts.h:
 
@@ -2658,6 +2644,8 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/size.h:
 
+/usr/local/include/openfhe.BAK/pke/schemebase/base-cryptoparameters.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/copy_options.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/replace_copy_if.h:
@@ -2672,11 +2660,11 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__new/global_typed_new_delete.h:
 
+/usr/local/include/openfhe.BAK/pke/scheme/bgvrns/bgvrns-pre.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cxxabi_config.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/move_iterator.h:
-
-/opt/homebrew/include/openfhe/pke/scheme/bgvrns/bgvrns-leveledshe.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iter_swap.h:
 
@@ -2712,7 +2700,9 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config_site:
 
-/opt/homebrew/include/openfhe/pke/scheme/bfvrns/bfvrns-cryptoparameters.h:
+/usr/local/include/openfhe.BAK/pke/schemebase/base-pre.h:
+
+/usr/local/include/openfhe.BAK/cereal/external/rapidjson/internal/pow10.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/swappable.h:
 
@@ -2724,8 +2714,6 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/can_extract_key.h:
 
-/opt/homebrew/include/cereal/archives/json.hpp:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/accumulate.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__exception/nested_exception.h:
@@ -2736,25 +2724,33 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/in_place.h:
 
+/usr/local/include/openfhe.BAK/pke/scheme/ckksrns/ckksrns-schemeswitching.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/movable.h:
+
+/usr/local/include/openfhe.BAK/pke/schemerns/rns-fhe.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/shuffle.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/different_from.h:
 
+/usr/local/include/openfhe.BAK/pke/scheme/ckksrns/ckksrns-scheme.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/extreme_value_distribution.h:
+
+/usr/local/include/openfhe.BAK/pke/scheme/bfvrns/bfvrns-fhe.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/derived_from.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_scalar.h:
+
+/usr/local/include/openfhe.BAK/core/lattice/hal/default/ilparams.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/constructible.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/is_seed_sequence.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/common_reference_with.h:
-
-/opt/homebrew/include/openfhe/core/utils/serial.h:
 
 /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_header_macro.h:
 
@@ -2780,13 +2776,13 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_posix_availability.h:
 
+/usr/local/include/openfhe.BAK/pke/keyswitch/keyswitch-hybrid.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/ignore.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/steady_clock.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/queue:
-
-/opt/homebrew/include/openfhe/core/utils/serializable.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/remove_if.h:
 
@@ -2795,8 +2791,6 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/count_if.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/file_clock.h:
-
-/opt/homebrew/include/openfhe/binfhe/lwe-keyswitchkey-fwd.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/bit_reference.h:
 
@@ -2818,8 +2812,6 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/pthread.h:
 
-/opt/homebrew/include/cereal/external/rapidjson/internal/diyfp.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_printf.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctype.h:
@@ -2832,13 +2824,13 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/not_fn.h:
 
-/opt/homebrew/include/cereal/external/rapidjson/internal/stack.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/array:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/minmax_element.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_nothrow_constructible.h:
+
+/usr/local/include/openfhe.BAK/core/math/hal/bigintdyn/backenddyn.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__atomic/support/c11.h:
 
@@ -2847,8 +2839,6 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mbstate_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/includes.h:
-
-/opt/homebrew/include/cereal/external/rapidjson/stream.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_condattr_t.h:
 
@@ -2863,6 +2853,10 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cerrno:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_volatile.h:
+
+/usr/local/include/openfhe.BAK/pke/scheme/bfvrns/gen-cryptocontext-bfvrns-params.h:
+
+/usr/local/include/openfhe.BAK/core/utils/sertype.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__atomic/check_memory_order.h:
 
@@ -2896,11 +2890,7 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale:
 
-/opt/homebrew/include/openfhe/core/math/hal/bigintfxd/backendfxd.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cmath:
-
-/opt/homebrew/include/openfhe/binfhe/lwe-publickey.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__assert:
 
@@ -2920,7 +2910,11 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/transform.h:
 
+/usr/local/include/openfhe.BAK/core/math/hal/transform.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/stable_sort.h:
+
+/usr/local/include/openfhe.BAK/pke/scheme/ckksrns/ckksrns-leveledshe.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/sort.h:
 
@@ -2931,6 +2925,8 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/mach/arm/_structs.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/clocale:
+
+/usr/local/include/openfhe.BAK/pke/scheme/bfvrns/bfvrns-pre.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:
 
@@ -2970,6 +2966,8 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_assignable.h:
 
+/usr/local/include/openfhe.BAK/pke/encoding/stringencoding.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/math.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/ranlux.h:
@@ -2978,15 +2976,13 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__compare/common_comparison_category.h:
 
-/opt/homebrew/include/openfhe/pke/key/privatekey-fwd.h:
+/usr/local/include/openfhe.BAK/core/utils/utilities.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/remove_copy_if.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/find.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_iterator_concept.h:
-
-/opt/homebrew/include/openfhe/pke/scheme/ckksrns/ckksrns-advancedshe.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__debug_utils/sanitizers.h:
 
@@ -3001,6 +2997,8 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/reverse_copy.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_fd_def.h:
+
+/usr/local/include/openfhe.BAK/cereal/external/rapidjson/internal/diyfp.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/partition_point.h:
 
@@ -3020,6 +3018,8 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_mutexattr_t.h:
 
+/usr/local/include/openfhe.BAK/core/utils/parallel.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/pstl.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/destruct_n.h:
@@ -3029,6 +3029,8 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/knuth_b.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ctype.h:
+
+/usr/local/include/openfhe.BAK/binfhe/binfhe-base-params.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/byte.h:
 
@@ -3044,13 +3046,7 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/chrono:
 
-/opt/homebrew/include/openfhe/pke/scheme/bfvrns/bfvrns-pke.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_abstract.h:
-
-/opt/homebrew/include/openfhe/pke/ciphertext-fwd.h:
-
-/opt/homebrew/include/cereal/specialize.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/ostream_iterator.h:
 
@@ -3074,23 +3070,29 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/random:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/shared_ptr.h:
+/usr/local/include/openfhe.BAK/cereal/external/rapidjson/encodedstream.h:
 
-/opt/homebrew/include/openfhe/binfhe/lwe-ciphertext-fwd.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/shared_ptr.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/remove_copy.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/allocator_arg_t.h:
 
+/usr/local/include/openfhe.BAK/core/utils/serial.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__compare/ordering.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/allocator.h:
+
+/usr/local/include/openfhe.BAK/pke/scheme/ckksrns/ckksrns-cryptoparameters.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/view_interface.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/xlocale/_ctype.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/exclusive_scan.h:
+
+/usr/local/include/openfhe.BAK/pke/openfhe.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_specialization.h:
 
@@ -3106,27 +3108,25 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/is_sorted.h:
 
+/usr/local/include/openfhe.BAK/cereal/external/rapidjson/stream.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/iterator_operations.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/replace.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/locale.h:
 
-/opt/homebrew/include/cereal/external/rapidjson/stringbuffer.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/discard_block_engine.h:
-
-/opt/homebrew/include/openfhe/binfhe/lwe-publickey-fwd.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/compare:
 
-/opt/homebrew/include/openfhe/pke/scheme/bgvrns/gen-cryptocontext-bgvrns.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/half_positive.h:
 
-/opt/homebrew/include/openfhe/pke/ciphertext.h:
+/usr/local/include/openfhe.BAK/pke/keyswitch/keyswitch-rns.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/is_sorted_until.h:
+
+/usr/local/include/openfhe.BAK/cereal/external/rapidjson/reader.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_locale_posix2008.h:
 
@@ -3142,8 +3142,6 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__math/special_functions.h:
 
-/opt/homebrew/include/cereal/macros.hpp:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/types.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__atomic/contention_t.h:
@@ -3152,15 +3150,13 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/for_each.h:
 
-/opt/homebrew/include/openfhe/core/math/hal/intnat/mubintvecnat.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/__xlocale.h:
-
-/opt/homebrew/include/cereal/details/helpers.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/binary_search.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/new:
+
+/usr/local/include/openfhe.BAK/pke/schemebase/base-parametergeneration.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/is_partitioned.h:
 
@@ -3176,8 +3172,6 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/high_resolution_clock.h:
 
-/opt/homebrew/include/openfhe/pke/key/publickey.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/alloca.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/maybe_const.h:
@@ -3187,6 +3181,8 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/memory.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_xlocale.h:
+
+/usr/local/include/openfhe.BAK/pke/schemerns/rns-multiparty.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/allocate_at_least.h:
 
@@ -3200,13 +3196,11 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/transform_inclusive_scan.h:
 
-/opt/homebrew/include/openfhe/pke/encoding/encodingparams.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/destructible.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/dependent_type.h:
 
-/opt/homebrew/include/openfhe/pke/scheme/ckksrns/ckksrns-multiparty.h:
+/usr/local/include/openfhe.BAK/cereal/types/base_class.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__atomic/fence.h:
 
@@ -3219,8 +3213,6 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/upper_bound.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/equality_comparable.h:
-
-/opt/homebrew/include/openfhe/pke/scheme/bfvrns/bfvrns-parametergeneration.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h:
 
@@ -3248,15 +3240,13 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__new/exceptions.h:
 
-/opt/homebrew/include/cereal/external/rapidjson/encodings.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h:
+
+/usr/local/include/openfhe.BAK/core/math/distributiongenerator.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_wctype_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/malloc/_malloc_type.h:
-
-/opt/homebrew/include/cereal/external/rapidjson/writer.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/filesystem:
 
@@ -3266,11 +3256,15 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/limits.h:
 
+/usr/local/include/openfhe.BAK/pke/encoding/encodingparams.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__string/extern_template_lists.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/path.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/mersenne_twister_engine.h:
+
+/usr/local/include/openfhe.BAK/cereal/external/rapidjson/istreamwrapper.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_abort.h:
 
@@ -3278,17 +3272,21 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/adjacent_find.h:
 
+/usr/local/include/openfhe.BAK/core/utils/type_name.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_uint64_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_fd_zero.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/pointer_to_unary_function.h:
 
+/usr/local/include/openfhe.BAK/pke/scheme/bfvrns/bfvrns-scheme.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/_limits.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_unsigned.h:
+/usr/local/include/openfhe.BAK/core/math/hal/intnat/ubintnat.h:
 
-/opt/homebrew/include/openfhe/pke/scheme/bgvrns/gen-cryptocontext-bgvrns-internal.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_unsigned.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/weak_result_type.h:
 
@@ -3297,6 +3295,8 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/binder2nd.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/lazy.h:
+
+/usr/local/include/openfhe.BAK/binfhe/rlwe-ciphertext.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__atomic/kill_dependency.h:
 
@@ -3308,8 +3308,6 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__vector/pmr.h:
 
-/opt/homebrew/include/openfhe/pke/schemebase/base-advancedshe.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/filesystem_error.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_cvref.h:
@@ -3318,9 +3316,11 @@ CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o: /Users/plrkiran1/TIP
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/arithmetic.h:
 
-/opt/homebrew/include/openfhe/core/lattice/hal/default/ildcrtparams.h:
+/usr/local/include/openfhe.BAK/cereal/external/rapidjson/error/error.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/streambuf.h:
+
+/usr/local/include/openfhe.BAK/binfhe/lwe-keypair.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_u_short.h:
 

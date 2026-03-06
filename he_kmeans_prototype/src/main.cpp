@@ -127,8 +127,8 @@ static std::vector<std::vector<double>> kmeans(const std::vector<std::vector<dou
     labels.assign(n, 0);
 
     // Initialize centroids by randomly sampling k points from data
-    // Fixed seed (42) for reproducibility across runs
-    std::mt19937_64 rng(42);
+    // Fixed seed (424242) for reproducibility across runs
+    std::mt19937_64 rng(424242);
     std::uniform_int_distribution<int> uni(0, n - 1);
     std::vector<std::vector<double>> C(k, std::vector<double>(d, 0.0));
     for (int j = 0; j < k; j++) C[j] = X[uni(rng)];
