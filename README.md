@@ -22,7 +22,7 @@ plrkiran51-ship-it/TIPS-HE-MPC-Clustering(plrkiran54@gmail.com)
 
 
 
-### 1. Data 
+### 1. Clone the repository 
 ```bash
 git clone --recursive https://github.com/plrkiran51-ship-it/TIPS-HE-MPC-Clustering.git
 cd TIPS-HE-MPC-Clustering
@@ -34,7 +34,7 @@ test with threat_dataset_1M.csv
 
 # TIPS-HECluster
 
-> **T**rusted **I**ntelligence **P**rivacy-preserving **S**ecure Clustering — a hybrid Homomorphic Encryption (HE) and Multi-Party Computation (MPC) framework for privacy-preserving k-means clustering of cyber threat intelligence data, built for researchers and practitioners.
+> Trusted Intelligence Privacy-preserving Secure Clustering — a hybrid Homomorphic Encryption (HE) and Multi-Party Computation (MPC) framework for privacy-preserving k-means clustering of cyber threat intelligence data, built for researchers and practitioners.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![OpenFHE](https://img.shields.io/badge/OpenFHE-v1.x-blue)](https://github.com/openfheorg/openfhe-development)
