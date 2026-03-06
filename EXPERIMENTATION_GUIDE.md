@@ -270,9 +270,9 @@ python3 scripts/run_parameter_sweep.py
 
 **Thesis Validation Threshold**: ARI ≥ 0.85 for acceptable accuracy
 
-✅ **HE-MPC Result**: ARI = 1.000 (exceeds threshold)  
-✅ **Privacy Guarantee**: All computations on encrypted data  
-✅ **Correctness**: Perfect match with ground truth clustering  
+**HE-MPC Result**: ARI = 1.000 (exceeds threshold)  
+**Privacy Guarantee**: All computations on encrypted data  
+**Correctness**: Perfect match with ground truth clustering  
 
 ### Performance Analysis
 
@@ -531,7 +531,7 @@ Plaintext ARI: 0.440
 HE-MPC ARI: 1.000
 Validation Passed: True
 
-✅ All validations passed!
+All validations passed! !comment
 ```
 
 ---
@@ -539,8 +539,7 @@ Validation Passed: True
 **Document Version**: 1.0  
 **Last Updated**: March 6, 2026  
 **Contact**: plrkiran54@gmail.com  
-**License**: MIT License
 
 ---
 
-*This document demonstrates the successful implementation and experimental validation of privacy-preserving threat intelligence clustering using HE-MPC techniques.*
+*Notes: This document demonstrates the successful implementation and experimental validation of privacy-preserving threat intelligence clustering using HE-MPC techniques.*
