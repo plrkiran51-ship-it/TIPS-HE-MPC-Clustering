@@ -41,3 +41,9 @@ openfhe-development/
 # Temporary
 *.tmp
 *.log
+
+# Local development/cleanup files (not for repository)
+CLEANUP_SUMMARY.md
+*_SUMMARY.md
+cleanup_*
+*-cleanup.*
