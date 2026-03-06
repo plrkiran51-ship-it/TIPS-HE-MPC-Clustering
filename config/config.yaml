@@ -1,0 +1,68 @@
+# TIPS-HECluster Configuration File
+# Runtime parameters for HE-MPC clustering pipeline
+
+# OpenFHE Encryption Parameters
+openfhe:
+  # Ring dimension (determines security and computational cost)
+  # Options: 8192, 16384, 32768, 65536
+  # Larger N = stronger security, slower computation
+  ring_dim: 16384
+
+  # Multiplicative depth (controls number of multiplication levels)
+  # Options: 2, 4, 6, 8
+  # Deeper circuits allow more operations but are slower
+  mult_depth: 4
+
+  # Scaling modulus bit size (precision for CKKS)
+  # Options: 30, 40, 50, 60
+  # Higher B = better floating-point precision
+  scaling_mod_bits: 40
+
+  # Plaintext modulus (for BGV scheme with integer data)
+  # Should be a prime number
+  plaintext_modulus: 65537
+
+  # Batch size for SIMD packing
+  # Options: 1024, 4096, 8192, 16384
+  batch_size: 4096
+
+# K-means Clustering Parameters
+clustering:
+  # Number of clusters
+  k: 8
+
+  # Maximum iterations for convergence
+  max_iterations: 10
+
+  # Path to input dataset (CSV format)
+  dataset: datasets/threat_vectors.csv
+
+  # Labels file for accuracy evaluation (optional)
+  # Used to compute ARI metric against ground truth
+  labels: datasets/ground_truth_labels.csv
+
+# Data Ingestion
+data:
+  # Input format: csv, json
+  input_format: csv
+
+  # Feature columns to use (comma-separated or indices)
+  # For STIX: severity, confidence, attack_type, timestamp
+  feature_columns: [0, 1, 2, 3]
+
+  # Normalize features before encryption? (recommended: true)
+  normalize: true
+
+# Output and Logging
+output:
+  # Directory for results
+  results_dir: results/
+
+  # Log level: DEBUG, INFO, WARNING, ERROR
+  log_level: INFO
+
+  # Save encrypted centroids for next iteration
+  save_encrypted_centroids: true
+
+  # Save plaintext cluster assignments
+  save_assignments: true
