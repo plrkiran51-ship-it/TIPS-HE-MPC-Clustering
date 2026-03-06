@@ -1,0 +1,10 @@
+mode,n,d,k,iters,ari,runtime_ms
+he_hybrid,150,3,3,5,1,32214.5
+he_hybrid,150,3,3,5,1,33927.5
+he_hybrid,150,3,3,5,1,34212.1
+he_hybrid,150,3,3,5,1,31494.6
+he_hybrid,150,3,3,5,1,31482.8
+he_hybrid,150,3,3,5,1,34631.1
+plain,150,3,3,10,0.439642,NA
+plain,150,3,3,10,,
+he_hybrid,150,3,3,5,1,32461.7

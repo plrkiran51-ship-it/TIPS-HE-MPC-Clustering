@@ -1,0 +1,4 @@
+threat_id,timestamp,severity,source_ip,country,attack_type
+1,2026-02-01 10:30,85,192.168.1.100,UK,DDoS
+2,2026-02-02 14:15,92,10.0.0.5,NL,phishing
+3,2026-02-03 09:45,78,172.16.0.1,DE,ransomware
