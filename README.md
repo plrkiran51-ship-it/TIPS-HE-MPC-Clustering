@@ -222,4 +222,13 @@ python scripts/run_parameter_sweep.py
 # Varies N, D, B, k over all combinations defined in config
 # Outputs: results/parameter_sweep_results.csv
 
+##Example commands for MPC
+To deploy the full HE-MPC pipeline:
+
+Start Kubernetes cluster:
+minikube start --cpus=4 --memory=8192
+Build and deploy containers:
+eval $(minikube docker-env)  # Use minikube's Dockerdocker build -t tips-he-mpc:latest .kubectl apply -f k8s/mpc-worker-deployment.yaml
+Verify deployment:
+kubectl get pods -l app=mpc-workerkubectl logs -l app=mpc-worker
 
