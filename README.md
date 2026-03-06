@@ -68,3 +68,6 @@ TIPS-HECluster implements a hybrid HE-MPC k-means clustering pipeline that allow
 ###CKKS and BGV schemes - CMake | ≥ 3.16 | Build system
 ###yaml-cpp | ≥ 0.7.0 | Runtime config loading
 
+### Python (Vectoriser + API)
+```bash
+pip install -r requirements.txt
