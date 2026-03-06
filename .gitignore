@@ -1,8 +1,43 @@
-.DS_Store
+# Build artifacts
 build/
+*.o
+*.a
+*.so
+*.dylib
+CMakeFiles/
+cmake_install.cmake
+CMakeCache.txt
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
 .DS_Store
-build/.DS_Store
-.DS_Store
-build/
-*.bin
-*.yaml.cmake
+.AppleDouble
+.LSOverride
+*.pem
+*.key
+
+# Large files (data and generated docs)
+*.csv
+*.json
+*.pdf
+threat_dataset_*.csv
+doc/html/
+doc/latex/
+Doxyfile
+
+# Auto-generated
+*.doxygen
+doxygen_sqlite3.db
+
+# Dependencies (shouldn't build OpenFHE in repo)
+openfhe-development/
+
+# Temporary
+*.tmp
+*.log
