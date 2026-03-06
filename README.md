@@ -82,3 +82,65 @@ Infrastructure (MPC Workers)
 Docker ≥ 20.x
 
 Kubernetes ≥ 1.24 (AWS EKS or local minikube)
+
+####Installation Guide
+Step1. Clone the repository
+git clone https://github.com/plrkiran51-ship-it/TIPS-HE-MPC-Clustering.git
+cd TIPS-HE-MPC-Clustering
+git checkout HE
+
+
+Step2 : Install OpenFHE
+git clone https://github.com/openfheorg/openfhe-development.git
+cd openfhe-development && mkdir build && cd build
+cmake .. -DBUILD_EXTRAS=ON
+make -j$(nproc) && sudo make install
+
+Step 3 : Build the HE pipeline
+mkdir build && cd build
+cmake .. -DOpenFHE_DIR=/usr/local/lib/cmake/OpenFHE
+make -j$(nproc)
+
+Step4: Configure runtime parameters
+openfhe:
+  ring_dim: 16384          # N: 8192 | 16384 | 32768
+  mult_depth: 4            # D: 2 | 4 | 6
+  scaling_mod_bits: 40     # B: 30 | 40 | 50
+  batch_size: 4096         # BS: 1024 | 4096 | 8192 | 16384
+
+clustering:
+  k: 8                     # Number of clusters
+  max_iter: 10             # Maximum k-means iterations
+  dataset: datasets/threats_1m.csv
+
+#### Running Experiments
+cd src/api   # Serves synthetic STIX threat records at http://localhost:5000/get-threat-data
+python app.py
+
+
+#Run plaintext baseline (k-means) - # Outputs: results/plaintext_kmeans_benchmarks.csv, plaincentroids.txt
+cd src/stix_vectoriser
+python plaintext_kmeans.py --dataset ../../datasets/threats_1m.csv --k 8
+
+# Outputs: results/plaintext_kmeans_benchmarks.csv, plaincentroids.txt
+cd src/stix_vectoriser
+python plaintext_kmeans.py --dataset ../../datasets/threats_1m.csv --k 8
+
+#Run encrypted HE-MPC clustering # Outputs: results/ckks_kmeans_benchmarks.csv, encrypted cluster assignments
+./build/tips_he_cluster --config config/config.yaml
+
+#Step 4 — Deploy MPC workers (Kubernetes)
+kubectl apply -f k8s/mpc-worker-deployment.yaml
+kubectl get pods -l app=mpc-worker   # Verify 3 worker pods running
+
+#Step 5 — Run parameter sweep experiments
+python scripts/run_parameter_sweep.py
+
+# Varies N, D, B, k over all combinations defined in config
+# Outputs: results/parameter_sweep_results.csv
+
+# Generating mock data and fetching live apis
+Please use generate mockdata to generate 1 million json data entry in prescribed format, and please use api's also. 
+
+
+
