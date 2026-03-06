@@ -65,5 +65,6 @@ TIPS-HECluster implements a hybrid HE-MPC k-means clustering pipeline that allow
 
 ## Prerequisites and Dependencies (It helps to setup )
 ### C++ Build (OpenFHE Pipeline) - [OpenFHE](https://github.com/openfheorg/openfhe-development) | ≥ 1.1.0,
-CKKS and BGV schemes - CMake | ≥ 3.16 | Build system 
+###CKKS and BGV schemes - CMake | ≥ 3.16 | Build system
+###yaml-cpp | ≥ 0.7.0 | Runtime config loading
 
