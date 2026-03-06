@@ -198,5 +198,8 @@ python scripts/run_parameter_sweep.py
 # Generating mock data and fetching live apis
 Please use generate mockdata to generate 1 million json data entry in prescribed format, and please use api's also. 
 
-
+# In ordert to deploy in Cloud
+Infrastructure (MPC Working)
+Docker ≥ 20.x
+Kubernetes ≥ 1.24 (AWS EKS or local minikube)
 
