@@ -113,12 +113,6 @@ TIPS-HE-MPC-Clustering/
 ├── Dockerfile
 └── README.md
 
-
-
-
-
-
-
 ## Prerequisites and Dependencies (It helps to setup )
 ### C++ Build (OpenFHE Pipeline) - [OpenFHE](https://github.com/openfheorg/openfhe-development) | ≥ 1.1.0,
 ###CKKS and BGV schemes - CMake | ≥ 3.16 | Build system
@@ -158,6 +152,7 @@ cmake .. -DOpenFHE_DIR=/usr/local/lib/cmake/OpenFHE
 make -j$(nproc)
 
 Step4: Configure runtime parameters
+Edit config/config.yaml before running:
 openfhe:
   ring_dim: 16384          # N: 8192 | 16384 | 32768
   mult_depth: 4            # D: 2 | 4 | 6
