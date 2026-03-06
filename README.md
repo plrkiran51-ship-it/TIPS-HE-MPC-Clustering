@@ -62,3 +62,8 @@ TIPS-HECluster implements a hybrid HE-MPC k-means clustering pipeline that allow
 | CKKS | Floating-point threat scores (severity, confidence, normalised timestamp) | Add, Multiply, Rotate | Approximate real/complex |
 | BGV | Integer-based threat counts, attack type codes | Add, Multiply | Exact integers |
 
+
+## Prerequisites and Dependencies (It helps to setup )
+### C++ Build (OpenFHE Pipeline) - [OpenFHE](https://github.com/openfheorg/openfhe-development) | ≥ 1.1.0,
+CKKS and BGV schemes - CMake | ≥ 3.16 | Build system 
+
