@@ -132,103 +132,80 @@ Infrastructure (MPC Workers)
 Docker ≥ 20.x
 
 Kubernetes ≥ 1.24 (AWS EKS or local minikube)
+#.
+# Installation Instructions
 
-####Installation Guide
-Step1. Clone the repository
+## System Requirements
+
+| Resource | Minimum | Recommended |
+|----------|---------|-------------|
+| RAM | 16 GB | 32 GB |
+| CPU | 4 cores | 8+ cores |
+| OS | macOS 12+ / Ubuntu 20.04+ | Apple M1/M2 or Linux |
+| Disk | 10 GB free | 20 GB free |
+
+## Dependencies
+
+| Dependency | Version | Purpose |
+|-----------|---------|---------|
+| [OpenFHE](https://github.com/openfheorg/openfhe-development) | ≥ 1.1.0 | CKKS and BGV schemes |
+| CMake | ≥ 3.16 | C++ build system |
+| GCC / Clang | ≥ 11 | C++17 required |
+| yaml-cpp | ≥ 0.7.0 | Runtime config loading |
+| Python | ≥ 3.9 | STIX vectoriser and API |
+| Docker | ≥ 20.x | MPC worker containers |
+| Kubernetes | ≥ 1.24 | MPC worker orchestration |
+
+---
+
+## Step 1 — Clone the Repository
+
+```bash
 git clone https://github.com/plrkiran51-ship-it/TIPS-HE-MPC-Clustering.git
 cd TIPS-HE-MPC-Clustering
 git checkout HE
 
-
-Step2 : Install OpenFHE
+##  Step 2 — Install OpenFHE
 git clone https://github.com/openfheorg/openfhe-development.git
-cd openfhe-development && mkdir build && cd build
-cmake .. -DBUILD_EXTRAS=ON
-make -j$(nproc) && sudo make install
+cd openfhe-development
+mkdir build && cd build
+cmake .. -DBUILD_EXTRAS=ON -DCMAKE_BUILD_TYPE=Release
+make -j$(nproc)
+sudo make install
+cd ../..
 
-Step 3 : Build the HE pipeline
+Verify: ls /usr/local/lib | grep OpenFHE
+
+## Step 3 — Install yaml-cpp
+brew install yaml-cpp
+
+## Step 4 — Build the HE Pipeline
 mkdir build && cd build
 cmake .. -DOpenFHE_DIR=/usr/local/lib/cmake/OpenFHE
 make -j$(nproc)
 
-Step4: Configure runtime parameters
-Edit config/config.yaml before running:
-openfhe:
-  ring_dim: 16384          # N: 8192 | 16384 | 32768
-  mult_depth: 4            # D: 2 | 4 | 6
-  scaling_mod_bits: 40     # B: 30 | 40 | 50
-  batch_size: 4096         # BS: 1024 | 4096 | 8192 | 16384
+##Step 4 — Build the HE Pipeline
+mkdir build && cd build
+cmake .. -DOpenFHE_DIR=/usr/local/lib/cmake/OpenFHE
+make -j$(nproc)
 
-clustering:
-  k: 8                     # Number of clusters
-  max_iter: 10             # Maximum k-means iterations
-  dataset: datasets/threats_1m.csv
+Expected: ./build/tips_he_cluster binary created.
 
-#### Running Experiments
-cd src/api   # Serves synthetic STIX threat records at http://localhost:5000/get-threat-data
-python app.py
+##Step 5 — Python Dependencies
 
-#Run plaintext baseline (k-means) - # Outputs: results/plaintext_kmeans_benchmarks.csv, plaincentroids.txt
-cd src/stix_vectoriser
-python plaintext_kmeans.py --dataset ../../datasets/threats_1m.csv --k 8
+pip install -r requirements.txt
 
-# Outputs: results/plaintext_kmeans_benchmarks.csv, plaincentroids.txt
-cd src/stix_vectoriser
-python plaintext_kmeans.py --dataset ../../datasets/threats_1m.csv --k 8
+## Step 6 — Docker (MPC Workers)
+docker build -t tips-mpc-worker:latest .
 
-#Run encrypted HE-MPC clustering # Outputs: results/ckks_kmeans_benchmarks.csv, encrypted cluster assignments
-./build/tips_he_cluster --config config/config.yaml
+##Troubleshooting examples
+If error persists OpenFHE not found by CMake:
+export OpenFHE_DIR=/usr/local/lib/cmake/OpenFHE
+cmake .. -DOpenFHE_DIR=$OpenFHE_DIR
 
-#Step 4 — Deploy MPC workers using Kubernetes
-kubectl apply -f k8s/mpc-worker-deployment.yaml
-kubectl get pods -l app=mpc-worker   # Verify 3 worker pods running
+Port conflict on Flask API:
+Edit src/api/app.py and change port=5000 to port=5001
 
-#Step 5 — Run parameter sweep experiments
-python scripts/run_parameter_sweep.py
-
-# Varies N, D, B, k over all combinations defined in config
-# Outputs: results/parameter_sweep_results.csv
-
-# Generating mock data and fetching live apis
-Please use generate mockdata to generate 1 million json data entry in prescribed format, and please use api's also. 
-
-# In ordert to deploy in Cloud
-Infrastructure (MPC Working)
-Docker ≥ 20.x
-Kubernetes ≥ 1.24 (AWS EKS or local minikube)
-
-Running Experiments
-Step 1 — Start the Threat Intelligence API
-bash
-cd src/api
-python app.py
-# Serves synthetic STIX threat records at http://localhost:5000/get-threat-data
-Step 2 — Run plaintext baseline (k-means)
-bash
-cd src/stix_vectoriser
-python plaintext_kmeans.py --dataset ../../datasets/threats_1m.csv --k 8
-# Outputs: results/plaintext_kmeans_benchmarks.csv, plaincentroids.txt
-Step 3 — Run encrypted HE-MPC clustering
-bash
-./build/tips_he_cluster --config config/config.yaml
-# Outputs: results/ckks_kmeans_benchmarks.csv, encrypted cluster assignments
-Step 4 — Deploy MPC workers (Kubernetes)
-bash
-kubectl apply -f k8s/mpc-worker-deployment.yaml
-kubectl get pods -l app=mpc-worker   # Verify 3 worker pods running
-Step 5 — Run parameter sweep experiments
-bash
-python scripts/run_parameter_sweep.py
-# Varies N, D, B, k over all combinations defined in config
-# Outputs: results/parameter_sweep_results.csv
-
-##Example commands for MPC
-To deploy the full HE-MPC pipeline:
-
-Start Kubernetes cluster:
-minikube start --cpus=4 --memory=8192
-Build and deploy containers:
-eval $(minikube docker-env)  # Use minikube's Dockerdocker build -t tips-he-mpc:latest .kubectl apply -f k8s/mpc-worker-deployment.yaml
-Verify deployment:
-kubectl get pods -l app=mpc-workerkubectl logs -l app=mpc-worker
-
+Apple M1 — OpenFHE build fails:
+cmake .. -DBUILD_EXTRAS=ON -DCMAKE_OSX_ARCHITECTURES=arm64
+#.
