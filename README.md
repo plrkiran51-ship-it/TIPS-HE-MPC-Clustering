@@ -168,7 +168,6 @@ clustering:
 cd src/api   # Serves synthetic STIX threat records at http://localhost:5000/get-threat-data
 python app.py
 
-
 #Run plaintext baseline (k-means) - # Outputs: results/plaintext_kmeans_benchmarks.csv, plaincentroids.txt
 cd src/stix_vectoriser
 python plaintext_kmeans.py --dataset ../../datasets/threats_1m.csv --k 8
@@ -180,7 +179,7 @@ python plaintext_kmeans.py --dataset ../../datasets/threats_1m.csv --k 8
 #Run encrypted HE-MPC clustering # Outputs: results/ckks_kmeans_benchmarks.csv, encrypted cluster assignments
 ./build/tips_he_cluster --config config/config.yaml
 
-#Step 4 — Deploy MPC workers (Kubernetes)
+#Step 4 — Deploy MPC workers using Kubernetes
 kubectl apply -f k8s/mpc-worker-deployment.yaml
 kubectl get pods -l app=mpc-worker   # Verify 3 worker pods running
 
@@ -197,4 +196,30 @@ Please use generate mockdata to generate 1 million json data entry in prescribed
 Infrastructure (MPC Working)
 Docker ≥ 20.x
 Kubernetes ≥ 1.24 (AWS EKS or local minikube)
+
+Running Experiments
+Step 1 — Start the Threat Intelligence API
+bash
+cd src/api
+python app.py
+# Serves synthetic STIX threat records at http://localhost:5000/get-threat-data
+Step 2 — Run plaintext baseline (k-means)
+bash
+cd src/stix_vectoriser
+python plaintext_kmeans.py --dataset ../../datasets/threats_1m.csv --k 8
+# Outputs: results/plaintext_kmeans_benchmarks.csv, plaincentroids.txt
+Step 3 — Run encrypted HE-MPC clustering
+bash
+./build/tips_he_cluster --config config/config.yaml
+# Outputs: results/ckks_kmeans_benchmarks.csv, encrypted cluster assignments
+Step 4 — Deploy MPC workers (Kubernetes)
+bash
+kubectl apply -f k8s/mpc-worker-deployment.yaml
+kubectl get pods -l app=mpc-worker   # Verify 3 worker pods running
+Step 5 — Run parameter sweep experiments
+bash
+python scripts/run_parameter_sweep.py
+# Varies N, D, B, k over all combinations defined in config
+# Outputs: results/parameter_sweep_results.csv
+
 
