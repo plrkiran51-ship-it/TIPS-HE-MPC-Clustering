@@ -256,14 +256,14 @@ python3 scripts/run_parameter_sweep.py
 
 ---
 
-## Results and Validation
+## Results and Validation ( Example scenario)
 
 ### Accuracy Metrics
 
 | Method | ARI Score | Runtime | Privacy |
 |--------|-----------|---------|---------|
-| Plaintext k-means | 0.440 | 0.024ms | ❌ None |
-| HE-MPC Clustering | 1.000 | 48s | ✅ Full |
+| Plaintext k-means | 0.440 | 0.024ms | None |
+| HE-MPC Clustering | 1.000 | 48s | Full |
 | **Improvement** | **+127%** | **+2M× slower** | **Complete** |
 
 ### Validation Results
