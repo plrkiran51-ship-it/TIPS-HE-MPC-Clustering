@@ -1,0 +1,72 @@
+\doxysection{src/\+benchmark.cpp File Reference}
+\hypertarget{src_2benchmark_8cpp}{}\label{src_2benchmark_8cpp}\index{src/benchmark.cpp@{src/benchmark.cpp}}
+
+
+Performance Benchmarking for HE-\/\+MPC Clustering Pipeline.  
+
+
+{\ttfamily \+\#include $<$chrono$>$}\newline
+{\ttfamily \+\#include "{}openfhe.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{src_2benchmark_8cpp_a301c10c87827b50554ff5b1f0c4a2179}{Benchmark\+Execution}} (const std::\+string \&operation, high\+\_\+resolution\+\_\+clock::\+time\+\_\+point start)
+\begin{DoxyCompactList}\small\item\em Measures and prints execution time for an operation. \end{DoxyCompactList}\item 
+\Hypertarget{src_2benchmark_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{src_2benchmark_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+int {\bfseries main} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Performance Benchmarking for HE-\/\+MPC Clustering Pipeline. 
+
+MIT License Copyright (c) 2024-\/2026 Lakshmi R. Kiran Pasumarthy SPDX-\/\+License-\/\+Identifier:\+ MIT
+
+TIPS-\/\+HECluster — Privacy-\/\+Preserving Threat Intelligence Clustering Trusted Privacy-\/\+Preserving Threat Information Platform for Sharing (TIPS) Edinburgh Napier University — PhD Research
+
+This module measures the execution time of key HE operations:\+
+\begin{DoxyItemize}
+\item Encryption of threat data
+\item Homomorphic k-\/means clustering
+\item Decryption of cluster assignments
+\end{DoxyItemize}
+
+Uses std::\+chrono high\+\_\+resolution\+\_\+clock for microsecond-\/precision timing. Output is printed to stdout in human-\/readable format.
+
+Typical workflow:\+
+\begin{DoxyEnumerate}
+\item Initialize encryption context and key pair
+\item Fetch threat data from API
+\item Time and execute:\+ encryption → clustering → decryption
+\item Report execution costs for each stage
+\end{DoxyEnumerate}
+
+\begin{DoxyAuthor}{Author}
+Lakshmi R. Kiran Pasumarthy 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+
+\label{doc-func-members}
+\Hypertarget{src_2benchmark_8cpp_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{src_2benchmark_8cpp_a301c10c87827b50554ff5b1f0c4a2179}\index{benchmark.cpp@{benchmark.cpp}!BenchmarkExecution@{BenchmarkExecution}}
+\index{BenchmarkExecution@{BenchmarkExecution}!benchmark.cpp@{benchmark.cpp}}
+\doxysubsubsection{\texorpdfstring{BenchmarkExecution()}{BenchmarkExecution()}}
+{\footnotesize\ttfamily \label{src_2benchmark_8cpp_a301c10c87827b50554ff5b1f0c4a2179} 
+void Benchmark\+Execution (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{operation}{, }\item[{high\+\_\+resolution\+\_\+clock::\+time\+\_\+point}]{start}{}\end{DoxyParamCaption})}
+
+
+
+Measures and prints execution time for an operation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em operation} & Descriptive name of the operation being timed (e.\+g., "{}\+Encryption"{}) \\
+\hline
+{\em start} & Time point captured before the operation began\\
+\hline
+\end{DoxyParams}
+Computes elapsed time in microseconds from {\ttfamily start} to the current time, then outputs a human-\/readable message like:\+ "{}\+Encryption Execution Time:\+ 45230 microseconds."{} 

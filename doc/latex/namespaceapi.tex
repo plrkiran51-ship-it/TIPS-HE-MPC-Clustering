@@ -1,0 +1,111 @@
+\doxysection{api Namespace Reference}
+\hypertarget{namespaceapi}{}\label{namespaceapi}\index{api@{api}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespaceapi_afe87e25227ccee846c03cf876fab1e97}{get\+\_\+csv}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespaceapi_a484bbf20571943d1aceb9cfc79748b48}\label{namespaceapi_a484bbf20571943d1aceb9cfc79748b48} 
+{\bfseries app} = Flask(\+\_\+\+\_\+name\+\_\+\+\_\+)
+\item 
+dict \doxymbox{\hyperlink{namespaceapi_af5591476103ba6d066bb553b99519f43}{data}}
+\item 
+\Hypertarget{namespaceapi_af0232daeb887dd7b6c6cb5bd63d4d764}\label{namespaceapi_af0232daeb887dd7b6c6cb5bd63d4d764} 
+{\bfseries df} = pd.\+Data\+Frame(data)
+\item 
+\Hypertarget{namespaceapi_ae8c5acdf81dc0d95bbbcb3142e4de14f}\label{namespaceapi_ae8c5acdf81dc0d95bbbcb3142e4de14f} 
+{\bfseries host}
+\item 
+\Hypertarget{namespaceapi_a53c5a75248af2663086ecacddc26af7f}\label{namespaceapi_a53c5a75248af2663086ecacddc26af7f} 
+{\bfseries port}
+\item 
+\Hypertarget{namespaceapi_a60996cc7d3a0d24700f1516d00d24db5}\label{namespaceapi_a60996cc7d3a0d24700f1516d00d24db5} 
+{\bfseries debug}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}api.py - Flask API for Threat Intelligence Data Serving
+
+MIT License
+Copyright (c) 2024-2026 Lakshmi R. Kiran Pasumarthy
+SPDX-License-Identifier: MIT
+
+TIPS-HECluster — Privacy-Preserving Threat Intelligence Clustering
+Trusted Privacy-Preserving Threat Information Platform for Sharing (TIPS)
+Edinburgh Napier University — PhD Research
+
+Description:
+    Provides HTTP endpoints for fetching synthetic threat intelligence data.
+    This Flask application is used by the C++ pipeline to retrieve threat
+    records that are subsequently encrypted and clustered.
+    
+    Endpoints:
+    - GET /threat_data: Returns threat dataset as CSV
+    
+    The dataset contains:
+    - ThreatID: Unique identifier
+    - ThreatScore: Severity metric (0.0-1.0)
+    - AttackType: Classification (DDoS, Malware, Phishing, Ransomware)
+    
+    Usage:
+        python api.py
+        # API listens on http://0.0.0.0:5000
+        # Client: curl http://127.0.0.1:5000/threat_data
+    
+Author: Lakshmi R. Kiran Pasumarthy
+Version: 1.0
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{namespaceapi_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespaceapi_afe87e25227ccee846c03cf876fab1e97}\index{api@{api}!get\_csv@{get\_csv}}
+\index{get\_csv@{get\_csv}!api@{api}}
+\doxysubsubsection{\texorpdfstring{get\_csv()}{get\_csv()}}
+{\footnotesize\ttfamily \label{namespaceapi_afe87e25227ccee846c03cf876fab1e97} 
+api.\+get\+\_\+csv (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}HTTP GET endpoint for threat intelligence data.
+
+Method: GET /threat_data
+Returns: Threat dataset as CSV (text/csv)
+
+CSV Format:
+    ThreatID,ThreatScore,AttackType
+    1,0.73,DDoS
+    2,0.42,Malware
+    ...
+
+This endpoint is called by the C++ encryption pipeline
+to fetch raw threat records for homomorphic clustering.
+\end{DoxyVerb}
+ 
+
+\label{doc-var-members}
+\Hypertarget{namespaceapi_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespaceapi_af5591476103ba6d066bb553b99519f43}\index{api@{api}!data@{data}}
+\index{data@{data}!api@{api}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily \label{namespaceapi_af5591476103ba6d066bb553b99519f43} 
+dict api.\+data}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{comment}{\#\ Unique\ threat\ identifier}}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{"{}ThreatID"{}}:\ range(1,\ 10001),\ \ }
+\DoxyCodeLine{00004\ \ \ \ \ }
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{comment}{\#\ Threat\ severity\ score\ (normalized\ to\ [0.0,\ 1.0])}}
+\DoxyCodeLine{00006\ \ \ \ \ \textcolor{stringliteral}{"{}ThreatScore"{}}:\ [round(random.uniform(0,\ 1),\ 2)\ \textcolor{keywordflow}{for}\ \_\ \textcolor{keywordflow}{in}\ range(10000)],\ }
+\DoxyCodeLine{00007\ \ \ \ \ }
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{comment}{\#\ Attack\ classification\ type}}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{stringliteral}{"{}AttackType"{}}:\ [random.choice([\textcolor{stringliteral}{"{}DDoS"{}},\ \textcolor{stringliteral}{"{}Malware"{}},\ \textcolor{stringliteral}{"{}Phishing"{}},\ \textcolor{stringliteral}{"{}Ransomware"{}}])\ \textcolor{keywordflow}{for}\ \_\ \textcolor{keywordflow}{in}\ range(10000)]\ }
+\DoxyCodeLine{00010\ \}}
+
+\end{DoxyCode}

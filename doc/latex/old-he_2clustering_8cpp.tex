@@ -1,0 +1,50 @@
+\doxysection{old-\/he/\+clustering.cpp File Reference}
+\hypertarget{old-he_2clustering_8cpp}{}\label{old-he_2clustering_8cpp}\index{old-\/he/clustering.cpp@{old-\/he/clustering.cpp}}
+
+
+Homomorphic K-\/\+Means Reference Implementation (Legacy).  
+
+
+{\ttfamily \+\#include "{}openfhe.\+h"{}}\newline
+{\ttfamily \+\#include $<$iostream$>$}\newline
+{\ttfamily \+\#include $<$vector$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{old-he_2clustering_8cpp_ae12b6a7af6cbdeb1ad3c970a652f4bf9}\label{old-he_2clustering_8cpp_ae12b6a7af6cbdeb1ad3c970a652f4bf9} 
+Ciphertext$<$ DCRTPoly $>$ {\bfseries Compute\+Squared\+Distance} (Crypto\+Context$<$ DCRTPoly $>$ cc, Ciphertext$<$ DCRTPoly $>$ encrypted\+\_\+x, Ciphertext$<$ DCRTPoly $>$ centroid)
+\item 
+\Hypertarget{old-he_2clustering_8cpp_a0758222325b8b05a54941d7452ccf6c3}\label{old-he_2clustering_8cpp_a0758222325b8b05a54941d7452ccf6c3} 
+vector$<$ Ciphertext$<$ DCRTPoly $>$ $>$ {\bfseries Initialize\+Centroids} (Crypto\+Context$<$ DCRTPoly $>$ cc, vector$<$ Ciphertext$<$ DCRTPoly $>$ $>$ \&encrypted\+\_\+data, int k)
+\item 
+\Hypertarget{old-he_2clustering_8cpp_ac6947266954d5fef5edd4c38a1a07f19}\label{old-he_2clustering_8cpp_ac6947266954d5fef5edd4c38a1a07f19} 
+vector$<$ Ciphertext$<$ DCRTPoly $>$ $>$ {\bfseries Homomorphic\+KMeans} (Crypto\+Context$<$ DCRTPoly $>$ cc, vector$<$ Ciphertext$<$ DCRTPoly $>$ $>$ encrypted\+\_\+data, int k, int iterations)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Homomorphic K-\/\+Means Reference Implementation (Legacy). 
+
+MIT License Copyright (c) 2024-\/2026 Lakshmi R. Kiran Pasumarthy SPDX-\/\+License-\/\+Identifier:\+ MIT
+
+TIPS-\/\+HECluster — Privacy-\/\+Preserving Threat Intelligence Clustering Trusted Privacy-\/\+Preserving Threat Information Platform for Sharing (TIPS) Edinburgh Napier University — PhD Research
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\doxymbox{\hyperlink{deprecated__deprecated000002}{Deprecated}}]Legacy implementation; see \doxylink{src_2clustering_8cpp}{src/\+clustering.\+cpp} for current version\end{DoxyRefDesc}
+
+
+This is a snapshot of an earlier k-\/means implementation used for initial feasibility studies. It demonstrates core concepts:\+
+\begin{DoxyItemize}
+\item Computing encrypted Euclidean distances
+\item Initializing centroids from encrypted data
+\item Iterative k-\/means optimization on ciphertexts
+\end{DoxyItemize}
+
+Note:\+ The current \doxylink{src_2clustering_8cpp}{src/\+clustering.\+cpp} version is more extensively documented and has been refined based on thesis research and optimization. This legacy version is archived for reproducibility.
+
+\begin{DoxyAuthor}{Author}
+Lakshmi R. Kiran Pasumarthy 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+9 (legacy) 
+\end{DoxyVersion}

@@ -1,0 +1,58 @@
+\doxysection{he\+\_\+kmeans\+\_\+prototype/\+src/\+main.cpp File Reference}
+\hypertarget{he__kmeans__prototype_2src_2main_8cpp}{}\label{he__kmeans__prototype_2src_2main_8cpp}\index{he\_kmeans\_prototype/src/main.cpp@{he\_kmeans\_prototype/src/main.cpp}}
+
+
+Plaintext K-\/\+Means Prototype with Accuracy Evaluation.  
+
+
+{\ttfamily \+\#include $<$iostream$>$}\newline
+{\ttfamily \+\#include $<$fstream$>$}\newline
+{\ttfamily \+\#include $<$sstream$>$}\newline
+{\ttfamily \+\#include $<$vector$>$}\newline
+{\ttfamily \+\#include $<$string$>$}\newline
+{\ttfamily \+\#include $<$cmath$>$}\newline
+{\ttfamily \+\#include $<$limits$>$}\newline
+{\ttfamily \+\#include $<$random$>$}\newline
+{\ttfamily \+\#include $<$stdexcept$>$}\newline
+{\ttfamily \+\#include $<$chrono$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{he__kmeans__prototype_2src_2main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}\label{he__kmeans__prototype_2src_2main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627} 
+int {\bfseries main} (int argc, char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}argv)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Plaintext K-\/\+Means Prototype with Accuracy Evaluation. 
+
+MIT License Copyright (c) 2024-\/2026 Lakshmi R. Kiran Pasumarthy SPDX-\/\+License-\/\+Identifier:\+ MIT
+
+TIPS-\/\+HECluster — Privacy-\/\+Preserving Threat Intelligence Clustering Trusted Privacy-\/\+Preserving Threat Information Platform for Sharing (TIPS) Edinburgh Napier University — PhD Research
+
+Proof-\/of-\/concept plaintext k-\/means implementation used to establish the baseline for encrypted clustering accuracy comparison.
+
+Functionality:\+
+\begin{DoxyEnumerate}
+\item Read threat feature vectors from CSV
+\item Run standard k-\/means algorithm (plaintext)
+\item Read ground-\/truth labels from separate CSV
+\item Compute Adjusted Rand Index (ARI) metric
+\item Compare with encrypted HE clustering results
+\end{DoxyEnumerate}
+
+This unencrypted version is essential for:\+
+\begin{DoxyItemize}
+\item Validating algorithm correctness
+\item Establishing baseline performance metrics ~\newline
+
+\item Computing ARI \texorpdfstring{$>$}{>}= 0.\+85 threshold validation
+\item Benchmarking against HE-\/\+MPC overhead
+\end{DoxyItemize}
+
+\begin{DoxyAuthor}{Author}
+Lakshmi R. Kiran Pasumarthy 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}

@@ -1,0 +1,90 @@
+\doxysection{old-\/he/\+data-\/ingestion.cpp File Reference}
+\hypertarget{old-he_2data-ingestion_8cpp}{}\label{old-he_2data-ingestion_8cpp}\index{old-\/he/data-\/ingestion.cpp@{old-\/he/data-\/ingestion.cpp}}
+
+
+Threat Data Fetch and Encryption (Legacy).  
+
+
+{\ttfamily \+\#include $<$iostream$>$}\newline
+{\ttfamily \+\#include $<$curl/\+curl.\+h$>$}\newline
+{\ttfamily \+\#include $<$nlohmann/\+json.\+hpp$>$}\newline
+{\ttfamily \+\#include "{}openfhe.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{old-he_2data-ingestion_8cpp_aaf8b229d06393cd7e4480e76d49a1a0f}\label{old-he_2data-ingestion_8cpp_aaf8b229d06393cd7e4480e76d49a1a0f} 
+size\+\_\+t {\bfseries Write\+Callback} (void \texorpdfstring{$\ast$}{*}contents, size\+\_\+t size, size\+\_\+t nmemb, std::\+string \texorpdfstring{$\ast$}{*}output)
+\begin{DoxyCompactList}\small\item\em Callback for libcurl to accumulate HTTP response. \end{DoxyCompactList}\item 
+json \doxymbox{\hyperlink{old-he_2data-ingestion_8cpp_ae1e4e37697f23f59aa83147809435b4e}{Fetch\+Threat\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Fetch threat records from Flask API. \end{DoxyCompactList}\item 
+vector$<$ Ciphertext$<$ DCRTPoly $>$ $>$ \doxymbox{\hyperlink{old-he_2data-ingestion_8cpp_a0aeb38603b8796c48113f4233d2c191e}{Encrypt\+Threat\+Data}} (Crypto\+Context$<$ DCRTPoly $>$ cc, Key\+Pair$<$ DCRTPoly $>$ key\+Pair, json \&threat\+\_\+data)
+\begin{DoxyCompactList}\small\item\em Encrypt threat scores from JSON records. \end{DoxyCompactList}\item 
+\Hypertarget{old-he_2data-ingestion_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{old-he_2data-ingestion_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+int {\bfseries main} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Threat Data Fetch and Encryption (Legacy). 
+
+MIT License Copyright (c) 2024-\/2026 Lakshmi R. Kiran Pasumarthy SPDX-\/\+License-\/\+Identifier:\+ MIT
+
+TIPS-\/\+HECluster — Privacy-\/\+Preserving Threat Intelligence Clustering Trusted Privacy-\/\+Preserving Threat Information Platform for Sharing (TIPS) Edinburgh Napier University — PhD Research
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\doxymbox{\hyperlink{deprecated__deprecated000003}{Deprecated}}]Legacy implementation; see \doxylink{src_2data-ingestion_8cpp}{src/\+data-\/ingestion.\+cpp} for current version\end{DoxyRefDesc}
+
+
+Implements the data ingestion pipeline:\+
+\begin{DoxyEnumerate}
+\item HTTP GET to Flask API to fetch threat records
+\item CKKS encryption of threat scores
+\item Return encrypted data for clustering
+\end{DoxyEnumerate}
+
+The \doxylink{he__kmeans_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main()} function demonstrates complete workflow:\+ init context, generate keys, fetch data, encrypt, and count successful encryptions.
+
+\begin{DoxyAuthor}{Author}
+Lakshmi R. Kiran Pasumarthy 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+9 (legacy) 
+\end{DoxyVersion}
+
+
+\label{doc-func-members}
+\Hypertarget{old-he_2data-ingestion_8cpp_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{old-he_2data-ingestion_8cpp_a0aeb38603b8796c48113f4233d2c191e}\index{data-\/ingestion.cpp@{data-\/ingestion.cpp}!EncryptThreatData@{EncryptThreatData}}
+\index{EncryptThreatData@{EncryptThreatData}!data-\/ingestion.cpp@{data-\/ingestion.cpp}}
+\doxysubsubsection{\texorpdfstring{EncryptThreatData()}{EncryptThreatData()}}
+{\footnotesize\ttfamily \label{old-he_2data-ingestion_8cpp_a0aeb38603b8796c48113f4233d2c191e} 
+vector$<$ Ciphertext$<$ DCRTPoly $>$ $>$ Encrypt\+Threat\+Data (\begin{DoxyParamCaption}\item[{Crypto\+Context$<$ DCRTPoly $>$}]{cc}{, }\item[{Key\+Pair$<$ DCRTPoly $>$}]{key\+Pair}{, }\item[{json \&}]{threat\+\_\+data}{}\end{DoxyParamCaption})}
+
+
+
+Encrypt threat scores from JSON records. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & Initialized CKKS context \\
+\hline
+{\em key\+Pair} & Public/\+secret key pair \\
+\hline
+{\em threat\+\_\+data} & JSON array of threat records\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vector of CKKS ciphertexts (one per record)
+\end{DoxyReturn}
+Extracts threat\+\_\+score from each record and encrypts under public key \Hypertarget{old-he_2data-ingestion_8cpp_ae1e4e37697f23f59aa83147809435b4e}\index{data-\/ingestion.cpp@{data-\/ingestion.cpp}!FetchThreatData@{FetchThreatData}}
+\index{FetchThreatData@{FetchThreatData}!data-\/ingestion.cpp@{data-\/ingestion.cpp}}
+\doxysubsubsection{\texorpdfstring{FetchThreatData()}{FetchThreatData()}}
+{\footnotesize\ttfamily \label{old-he_2data-ingestion_8cpp_ae1e4e37697f23f59aa83147809435b4e} 
+json Fetch\+Threat\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Fetch threat records from Flask API. 
+
+Issues HTTP GET to localhost:\+5000 and parses JSON response 

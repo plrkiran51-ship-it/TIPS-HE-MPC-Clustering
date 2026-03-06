@@ -1,0 +1,107 @@
+\doxysection{src/\+encryption.cpp File Reference}
+\hypertarget{src_2encryption_8cpp}{}\label{src_2encryption_8cpp}\index{src/encryption.cpp@{src/encryption.cpp}}
+
+
+CKKS Homomorphic Encryption for Threat Scores.  
+
+
+{\ttfamily \+\#include $<$iostream$>$}\newline
+{\ttfamily \+\#include $<$vector$>$}\newline
+{\ttfamily \+\#include $<$curl/\+curl.\+h$>$}\newline
+{\ttfamily \+\#include $<$nlohmann/\+json.\+hpp$>$}\newline
+{\ttfamily \+\#include "{}openfhe.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \doxymbox{\hyperlink{src_2encryption_8cpp_aaf8b229d06393cd7e4480e76d49a1a0f}{Write\+Callback}} (void \texorpdfstring{$\ast$}{*}contents, size\+\_\+t size, size\+\_\+t nmemb, std::\+string \texorpdfstring{$\ast$}{*}output)
+\begin{DoxyCompactList}\small\item\em Callback function for libcurl HTTP response handling. \end{DoxyCompactList}\item 
+json \doxymbox{\hyperlink{src_2encryption_8cpp_ac050aca7c0bf6c13e755841e582a0e1c}{fetch\+Data\+From\+API}} (const std::\+string \&api\+\_\+url)
+\begin{DoxyCompactList}\small\item\em Fetches threat data from a remote HTTP API endpoint. \end{DoxyCompactList}\item 
+\Hypertarget{src_2encryption_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{src_2encryption_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+int {\bfseries main} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+CKKS Homomorphic Encryption for Threat Scores. 
+
+MIT License Copyright (c) 2024-\/2026 Lakshmi R. Kiran Pasumarthy SPDX-\/\+License-\/\+Identifier:\+ MIT
+
+TIPS-\/\+HECluster — Privacy-\/\+Preserving Threat Intelligence Clustering Trusted Privacy-\/\+Preserving Threat Information Platform for Sharing (TIPS) Edinburgh Napier University — PhD Research
+
+Demonstrates complete CKKS encryption workflow for floating-\/point threat scores:\+
+\begin{DoxyEnumerate}
+\item Fetch threat data from locally-\/running Flask API
+\item Initialize Open\+FHE CKKS context with HE parameters
+\item Generate public/\+secret key pair
+\item Encrypt threat severity scores
+\item Perform homomorphic operations (compute mean without decryption)
+\item Decrypt results and display
+\end{DoxyEnumerate}
+
+Uses libcurl for HTTP communication with Flask backend and nlohmann/\+json for JSON parsing. This module serves as both example code and integration test.
+
+CKKS scheme properties:\+
+\begin{DoxyItemize}
+\item Supports approximate real/\+complex arithmetic
+\item Efficient for floating-\/point threat metrics
+\item Allows addition and multiplication of ciphertexts
+\item Requires scaling factor management for precision
+\end{DoxyItemize}
+
+\begin{DoxyAuthor}{Author}
+Lakshmi R. Kiran Pasumarthy 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+
+\label{doc-func-members}
+\Hypertarget{src_2encryption_8cpp_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{src_2encryption_8cpp_ac050aca7c0bf6c13e755841e582a0e1c}\index{encryption.cpp@{encryption.cpp}!fetchDataFromAPI@{fetchDataFromAPI}}
+\index{fetchDataFromAPI@{fetchDataFromAPI}!encryption.cpp@{encryption.cpp}}
+\doxysubsubsection{\texorpdfstring{fetchDataFromAPI()}{fetchDataFromAPI()}}
+{\footnotesize\ttfamily \label{src_2encryption_8cpp_ac050aca7c0bf6c13e755841e582a0e1c} 
+json fetch\+Data\+From\+API (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{api\+\_\+url}{}\end{DoxyParamCaption})}
+
+
+
+Fetches threat data from a remote HTTP API endpoint. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em api\+\_\+url} & URL of the threat data API (e.\+g., "{}http:\+/\+/\+127.\+0.\+0.\+1:\+5000/\+data"{})\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nlohmann::\+json Parsed JSON response containing threat records
+\end{DoxyReturn}
+Uses libcurl to issue HTTP GET request to {\ttfamily api\+\_\+url}. Response body is accumulated via Write\+Callback and parsed as JSON. Caller is responsible for ensuring API is running and returns valid JSON.
+
+Error handling is minimal; ensure API is reachable before calling. \Hypertarget{src_2encryption_8cpp_aaf8b229d06393cd7e4480e76d49a1a0f}\index{encryption.cpp@{encryption.cpp}!WriteCallback@{WriteCallback}}
+\index{WriteCallback@{WriteCallback}!encryption.cpp@{encryption.cpp}}
+\doxysubsubsection{\texorpdfstring{WriteCallback()}{WriteCallback()}}
+{\footnotesize\ttfamily \label{src_2encryption_8cpp_aaf8b229d06393cd7e4480e76d49a1a0f} 
+size\+\_\+t Write\+Callback (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{contents}{, }\item[{size\+\_\+t}]{size}{, }\item[{size\+\_\+t}]{nmemb}{, }\item[{std::\+string \texorpdfstring{$\ast$}{*}}]{output}{}\end{DoxyParamCaption})}
+
+
+
+Callback function for libcurl HTTP response handling. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em contents} & Pointer to response buffer from curl \\
+\hline
+{\em size} & Element count in response \\
+\hline
+{\em nmemb} & Element size in bytes \\
+\hline
+{\em output} & Pointer to std::\+string to append response data to\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Total bytes processed
+\end{DoxyReturn}
+Called by curl\+\_\+easy\+\_\+perform() to accumulate HTTP response body. Appends received data to the output string for subsequent JSON parsing. 

@@ -1,0 +1,111 @@
+\doxysection{src/\+clustering.cpp File Reference}
+\hypertarget{src_2clustering_8cpp}{}\label{src_2clustering_8cpp}\index{src/clustering.cpp@{src/clustering.cpp}}
+
+
+Homomorphic K-\/\+Means Clustering Implementation.  
+
+
+{\ttfamily \+\#include "{}openfhe.\+h"{}}\newline
+{\ttfamily \+\#include $<$iostream$>$}\newline
+{\ttfamily \+\#include $<$vector$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Ciphertext$<$ DCRTPoly $>$ \doxymbox{\hyperlink{src_2clustering_8cpp_ae12b6a7af6cbdeb1ad3c970a652f4bf9}{Compute\+Squared\+Distance}} (Crypto\+Context$<$ DCRTPoly $>$ cc, Ciphertext$<$ DCRTPoly $>$ encrypted\+\_\+x, Ciphertext$<$ DCRTPoly $>$ centroid)
+\item 
+\Hypertarget{src_2clustering_8cpp_a0758222325b8b05a54941d7452ccf6c3}\label{src_2clustering_8cpp_a0758222325b8b05a54941d7452ccf6c3} 
+vector$<$ Ciphertext$<$ DCRTPoly $>$ $>$ {\bfseries Initialize\+Centroids} (Crypto\+Context$<$ DCRTPoly $>$ cc, vector$<$ Ciphertext$<$ DCRTPoly $>$ $>$ \&encrypted\+\_\+data, int k)
+\item 
+\Hypertarget{src_2clustering_8cpp_ac6947266954d5fef5edd4c38a1a07f19}\label{src_2clustering_8cpp_ac6947266954d5fef5edd4c38a1a07f19} 
+vector$<$ Ciphertext$<$ DCRTPoly $>$ $>$ {\bfseries Homomorphic\+KMeans} (Crypto\+Context$<$ DCRTPoly $>$ cc, vector$<$ Ciphertext$<$ DCRTPoly $>$ $>$ encrypted\+\_\+data, int k, int iterations)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Homomorphic K-\/\+Means Clustering Implementation. 
+
+MIT License Copyright (c) 2024-\/2026 Lakshmi R. Kiran Pasumarthy SPDX-\/\+License-\/\+Identifier:\+ MIT
+
+TIPS-\/\+HECluster — Privacy-\/\+Preserving Threat Intelligence Clustering Trusted Privacy-\/\+Preserving Threat Information Platform for Sharing (TIPS) Edinburgh Napier University — PhD Research
+
+This file is the heart of the HE-\/\+MPC clustering pipeline. It implements k-\/means clustering entirely on encrypted data using Open\+FHE CKKS operations. All threat records remain encrypted throughout the clustering process.
+
+Key Functions:\+
+\begin{DoxyItemize}
+\item Compute\+Squared\+Distance:\+ Encrypted Euclidean distance computation
+\item Initialize\+Centroids:\+ Initialize k centroids from encrypted data
+\item Homomorphic\+KMeans:\+ Main clustering algorithm (k iterations)
+\end{DoxyItemize}
+
+Privacy Guarantees:\+
+\begin{DoxyItemize}
+\item Raw threat data is never decrypted
+\item Only final cluster assignments are revealed
+\item Cluster centroids remain encrypted
+\item Compatible with semi-\/honest adversary model
+\end{DoxyItemize}
+
+Computational Cost:\+
+\begin{DoxyItemize}
+\item O(n\texorpdfstring{$\ast$}{*}k) distance computations per iteration (encrypted)
+\item O(k) centroid updates per iteration
+\item Encrypted argmin is offloaded to MPC layer
+\end{DoxyItemize}
+
+\begin{DoxyAuthor}{Author}
+Lakshmi R. Kiran Pasumarthy 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0
+\end{DoxyVersion}
+Copyright (c) 2024-\/2026 Lakshmi R. Kiran Pasumarthy SPDX-\/\+License-\/\+Identifier:\+ MIT
+
+TIPS-\/\+HECluster — Privacy-\/\+Preserving Threat Intelligence Clustering Trusted Privacy-\/\+Preserving Threat Information Platform for Sharing (TIPS) Edinburgh Napier University — PhD Research
+
+This file implements a privacy-\/preserving k-\/means clustering algorithm using Open\+FHE (Open Fully Homomorphic Encryption) library. All computations are performed on encrypted data, ensuring data privacy throughout the clustering process.
+
+The implementation provides three main functions:\+
+\begin{DoxyEnumerate}
+\item Compute\+Squared\+Distance -\/ Calculates euclidean distance between encrypted points
+\item Initialize\+Centroids -\/ Initializes k centroids from encrypted data
+\item Homomorphic\+KMeans -\/ Performs k-\/means clustering on encrypted data
+\end{DoxyEnumerate}
+
+Key Features:\+
+\begin{DoxyItemize}
+\item All data remains encrypted during computation
+\item Supports arbitrary number of clusters (k parameter)
+\item Configurable iteration count for convergence
+\item Uses Open\+FHE\textquotesingle{}s DCRT polynomial implementation for efficient encrypted operations
+\end{DoxyItemize}
+
+Dependencies:\+
+\begin{DoxyItemize}
+\item Open\+FHE library for homomorphic encryption operations
+\item Standard C++ libraries (iostream, vector)
+\end{DoxyItemize}
+
+\begin{DoxyAuthor}{Author}
+Lakshmi R. Kiran Pasumarthy 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+
+\label{doc-func-members}
+\Hypertarget{src_2clustering_8cpp_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{src_2clustering_8cpp_ae12b6a7af6cbdeb1ad3c970a652f4bf9}\index{clustering.cpp@{clustering.cpp}!ComputeSquaredDistance@{ComputeSquaredDistance}}
+\index{ComputeSquaredDistance@{ComputeSquaredDistance}!clustering.cpp@{clustering.cpp}}
+\doxysubsubsection{\texorpdfstring{ComputeSquaredDistance()}{ComputeSquaredDistance()}}
+{\footnotesize\ttfamily \label{src_2clustering_8cpp_ae12b6a7af6cbdeb1ad3c970a652f4bf9} 
+Ciphertext$<$ DCRTPoly $>$ Compute\+Squared\+Distance (\begin{DoxyParamCaption}\item[{Crypto\+Context$<$ DCRTPoly $>$}]{cc}{, }\item[{Ciphertext$<$ DCRTPoly $>$}]{encrypted\+\_\+x}{, }\item[{Ciphertext$<$ DCRTPoly $>$}]{centroid}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & \\
+\hline
+{\em cc} & Crypto\+Context$<$\+DCRTPoly$>$ -\/ The cryptographic context that encapsulates all parameters and configurations for homomorphic encryption operations. This context contains the ring dimension, moduli chain, encryption scheme parameters, and precomputed tables necessary for performing encrypted computations on DCRTPoly (Double-\/\+CRT Polynomial) ciphertexts. The context must be properly initialized with scheme parameters (such as multiplicative depth, scaling factor, and security level) before being used for encryption, decryption, or evaluation operations in the clustering algorithm. \\
+\hline
+\end{DoxyParams}

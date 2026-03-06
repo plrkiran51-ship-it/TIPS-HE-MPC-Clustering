@@ -1,0 +1,70 @@
+\doxysection{old-\/he/\+encryption.cpp File Reference}
+\hypertarget{old-he_2encryption_8cpp}{}\label{old-he_2encryption_8cpp}\index{old-\/he/encryption.cpp@{old-\/he/encryption.cpp}}
+
+
+Open\+FHE CKKS Encryption Example (Legacy).  
+
+
+{\ttfamily \+\#include $<$iostream$>$}\newline
+{\ttfamily \+\#include $<$vector$>$}\newline
+{\ttfamily \+\#include $<$curl/\+curl.\+h$>$}\newline
+{\ttfamily \+\#include $<$nlohmann/\+json.\+hpp$>$}\newline
+{\ttfamily \+\#include "{}openfhe.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \doxymbox{\hyperlink{old-he_2encryption_8cpp_aaf8b229d06393cd7e4480e76d49a1a0f}{Write\+Callback}} (void \texorpdfstring{$\ast$}{*}contents, size\+\_\+t size, size\+\_\+t nmemb, std::\+string \texorpdfstring{$\ast$}{*}output)
+\begin{DoxyCompactList}\small\item\em Callback for HTTP response accumulation (libcurl). \end{DoxyCompactList}\item 
+\Hypertarget{old-he_2encryption_8cpp_ac050aca7c0bf6c13e755841e582a0e1c}\label{old-he_2encryption_8cpp_ac050aca7c0bf6c13e755841e582a0e1c} 
+json {\bfseries fetch\+Data\+From\+API} (const std::\+string \&api\+\_\+url)
+\item 
+\Hypertarget{old-he_2encryption_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{old-he_2encryption_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+int {\bfseries main} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Open\+FHE CKKS Encryption Example (Legacy). 
+
+MIT License Copyright (c) 2024-\/2026 Lakshmi R. Kiran Pasumarthy SPDX-\/\+License-\/\+Identifier:\+ MIT
+
+TIPS-\/\+HECluster — Privacy-\/\+Preserving Threat Intelligence Clustering Trusted Privacy-\/\+Preserving Threat Information Platform for Sharing (TIPS) Edinburgh Napier University — PhD Research
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\doxymbox{\hyperlink{deprecated__deprecated000004}{Deprecated}}]Legacy implementation; see \doxylink{src_2encryption_8cpp}{src/\+encryption.\+cpp} for current version\end{DoxyRefDesc}
+
+
+This file demonstrates a complete CKKS encryption workflow:\+
+\begin{DoxyItemize}
+\item Fetch threat data from Flask API via HTTP
+\item Initialize Open\+FHE cryptographic context
+\item Generate public/\+secret key pair with evaluation keys
+\item Encrypt threat severity scores
+\item Compute homomorphic mean (sum then divide)
+\item Decrypt and display result
+\end{DoxyItemize}
+
+Note:\+ This is archived code from an earlier project phase. The current implementation in \doxylink{src_2encryption_8cpp}{src/\+encryption.\+cpp} is the maintained version.
+
+\begin{DoxyAuthor}{Author}
+Lakshmi R. Kiran Pasumarthy 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+9 (legacy) 
+\end{DoxyVersion}
+
+
+\label{doc-func-members}
+\Hypertarget{old-he_2encryption_8cpp_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{old-he_2encryption_8cpp_aaf8b229d06393cd7e4480e76d49a1a0f}\index{encryption.cpp@{encryption.cpp}!WriteCallback@{WriteCallback}}
+\index{WriteCallback@{WriteCallback}!encryption.cpp@{encryption.cpp}}
+\doxysubsubsection{\texorpdfstring{WriteCallback()}{WriteCallback()}}
+{\footnotesize\ttfamily \label{old-he_2encryption_8cpp_aaf8b229d06393cd7e4480e76d49a1a0f} 
+size\+\_\+t Write\+Callback (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{contents}{, }\item[{size\+\_\+t}]{size}{, }\item[{size\+\_\+t}]{nmemb}{, }\item[{std::\+string \texorpdfstring{$\ast$}{*}}]{output}{}\end{DoxyParamCaption})}
+
+
+
+Callback for HTTP response accumulation (libcurl). 
+
+Called repeatedly by curl\+\_\+easy\+\_\+perform() to buffer response data 

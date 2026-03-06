@@ -1,3 +1,36 @@
+/**
+ * @file scheme-selection.cpp
+ * @brief Interactive Encryption Scheme Selector (CKKS vs BGV)
+ * 
+ * MIT License
+ * Copyright (c) 2024-2026 Lakshmi R. Kiran Pasumarthy
+ * SPDX-License-Identifier: MIT
+ * 
+ * TIPS-HECluster — Privacy-Preserving Threat Intelligence Clustering
+ * Trusted Privacy-Preserving Threat Information Platform for Sharing (TIPS)
+ * Edinburgh Napier University — PhD Research
+ * 
+ * @details
+ * This interactive utility demonstrates how to select and initialize different
+ * homomorphic encryption schemes based on data type and use case.
+ * 
+ * Scheme Selection Criteria:
+ * - CKKS: For floating-point threat scores (severity, confidence, normalized time)
+ *         Supports approximate arithmetic with high precision
+ * - BGV: For integer-based counts (attack frequency, packet counts)
+ *        Supports exact arithmetic on integers
+ * 
+ * The program:
+ * 1. Prompts user to choose data type (floating-point or integer)
+ * 2. Selects appropriate HE scheme
+ * 3. Configures scheme-specific parameters
+ * 4. Enables required HE capabilities (PKE, KEYSWITCH, LEVELEDSHE)
+ * 5. Reports successful setup
+ * 
+ * @author Lakshmi R. Kiran Pasumarthy
+ * @version 1.0
+ */
+
 #include <iostream>
 #include <vector>
 #include "openfhe.h"

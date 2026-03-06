@@ -1,3 +1,28 @@
+/**
+ * @file main1.cpp
+ * @brief Plaintext K-Means Variant (Experimental)
+ * 
+ * MIT License
+ * Copyright (c) 2024-2026 Lakshmi R. Kiran Pasumarthy
+ * SPDX-License-Identifier: MIT
+ * 
+ * TIPS-HECluster — Privacy-Preserving Threat Intelligence Clustering
+ * Trusted Privacy-Preserving Threat Information Platform for Sharing (TIPS)
+ * Edinburgh Napier University — PhD Research
+ * 
+ * @deprecated Experimental variant; see he_kmeans_prototype/src/main.cpp for primary version
+ * 
+ * @details
+ * Alternative implementation of plaintext k-means used for testing
+ * different initialization strategies or convergence criteria.
+ * 
+ * This version maintains identical functionality to main.cpp but may
+ * have been used to evaluate parameter variations during the research phase.
+ * 
+ * @author Lakshmi R. Kiran Pasumarthy
+ * @version 1.0 (experimental)
+ */
+
 #include <iostream>
 #include <fstream>
 #include <sstream>
@@ -9,7 +34,9 @@
 #include <stdexcept>
 #include <chrono>
 
-// Minimal CSV reader: reads numeric CSV with header.
+/**
+ * @brief Parse numeric CSV file into 2D vector
+ */
 static std::vector<std::vector<double>> readcsv(const std::string& path) {
     std::ifstream in(path);
     if (!in) throw std::runtime_error("cannot open " + path);

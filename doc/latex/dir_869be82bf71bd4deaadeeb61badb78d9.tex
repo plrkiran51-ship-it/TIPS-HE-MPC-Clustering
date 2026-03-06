@@ -1,0 +1,26 @@
+\doxysection{old-\/he Directory Reference}
+\hypertarget{dir_869be82bf71bd4deaadeeb61badb78d9}{}\label{dir_869be82bf71bd4deaadeeb61badb78d9}\index{old-\/he Directory Reference@{old-\/he Directory Reference}}
+\doxysubsubsection*{Files}
+\begin{DoxyCompactItemize}
+\item 
+file \doxymbox{\hyperlink{old-he_2benchmark_8cpp}{benchmark.\+cpp}}
+\begin{DoxyCompactList}\small\item\em HE Pipeline Performance Measurement (Legacy). \end{DoxyCompactList}\item 
+file \doxymbox{\hyperlink{old-he_2clustering_8cpp}{clustering.\+cpp}}
+\begin{DoxyCompactList}\small\item\em Homomorphic K-\/\+Means Reference Implementation (Legacy). \end{DoxyCompactList}\item 
+file \doxymbox{\hyperlink{old-he_2data-ingestion_8cpp}{data-\/ingestion.\+cpp}}
+\begin{DoxyCompactList}\small\item\em Threat Data Fetch and Encryption (Legacy). \end{DoxyCompactList}\item 
+file \doxymbox{\hyperlink{old-he_2encryption_8cpp}{encryption.\+cpp}}
+\begin{DoxyCompactList}\small\item\em Open\+FHE CKKS Encryption Example (Legacy). \end{DoxyCompactList}\item 
+file \doxymbox{\hyperlink{old-he_2mpc__interface_8cpp}{mpc\+\_\+interface.\+cpp}}
+\begin{DoxyCompactList}\small\item\em MPC Secure Argmin Program (Legacy). \end{DoxyCompactList}\item 
+file \doxymbox{\hyperlink{old-he_2scheme-selection_8cpp}{scheme-\/selection.\+cpp}}
+\begin{DoxyCompactList}\small\item\em Interactive CKKS/\+\+BGV Scheme Selector (Legacy). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\hypertarget{dir_869be82bf71bd4deaadeeb61badb78d9_autotoc_md0}{}\doxysubsection{\texorpdfstring{Experimentation\+\_\+\+HE}{Experimentation\+\_\+\+HE}}\label{dir_869be82bf71bd4deaadeeb61badb78d9_autotoc_md0}
+Pull openfhe development integrate these files into openfhe development run server/\+python3 app.\+py run client plrkiran@macbookair-\/1 client \% g++ -\/std=c++17 encryption.\+cpp -\/o encryption \textbackslash{} -\/I/\+usr/\+local/\+include/\+openfhe \textbackslash{} -\/I/\+usr/\+local/\+include/\+openfhe/\+core \textbackslash{} -\/I/\+usr/\+local/\+include/\+openfhe/\+pke \textbackslash{} -\/I/\+usr/\+local/\+include/\+openfhe/\+binfhe \textbackslash{} -\/\+I/\+opt/\+homebrew/\+\+Cellar/\+nlohmann-\/json/\+3.\+11.\+3/\+include \textbackslash{} -\/L/\+usr/\+local/\+lib -\/l\+OPENFHEcore -\/l\+OPENFHEpke -\/l\+OPENFHEbinfhe -\/lcurl \textbackslash{} -\/Wl,-\/rpath,/\+usr/\+local/\+lib
+
+g++ -\/std=c++17 clustering.\+cpp -\/o clustering \textbackslash{} -\/I/\+usr/\+local/\+include/\+openfhe \textbackslash{} -\/I/\+usr/\+local/\+include/\+openfhe/\+core \textbackslash{} -\/I/\+usr/\+local/\+include/\+openfhe/\+pke \textbackslash{} -\/I/\+usr/\+local/\+include/\+openfhe/\+binfhe \textbackslash{} -\/\+I/\+opt/\+homebrew/\+\+Cellar/\+nlohmann-\/json/\+3.\+11.\+3/\+include \textbackslash{} -\/L/\+usr/\+local/\+lib -\/l\+OPENFHEcore -\/l\+OPENFHEpke -\/l\+OPENFHEbinfhe -\/lcurl \textbackslash{} -\/Wl,-\/rpath,/\+usr/\+local/\+lib
+
+./\+encryption ./\+clustering 

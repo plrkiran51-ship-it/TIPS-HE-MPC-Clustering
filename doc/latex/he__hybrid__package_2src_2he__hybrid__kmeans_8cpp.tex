@@ -1,0 +1,68 @@
+\doxysection{he\+\_\+hybrid\+\_\+package/\+src/\+he\+\_\+hybrid\+\_\+kmeans.cpp File Reference}
+\hypertarget{he__hybrid__package_2src_2he__hybrid__kmeans_8cpp}{}\label{he__hybrid__package_2src_2he__hybrid__kmeans_8cpp}\index{he\_hybrid\_package/src/he\_hybrid\_kmeans.cpp@{he\_hybrid\_package/src/he\_hybrid\_kmeans.cpp}}
+
+
+Hybrid HE-\/\+MPC K-\/\+Means Implementation (Production Package).  
+
+
+{\ttfamily \+\#include $<$openfhe/\+pke/\+openfhe.\+h$>$}\newline
+{\ttfamily \+\#include $<$iostream$>$}\newline
+{\ttfamily \+\#include $<$fstream$>$}\newline
+{\ttfamily \+\#include $<$sstream$>$}\newline
+{\ttfamily \+\#include $<$vector$>$}\newline
+{\ttfamily \+\#include $<$string$>$}\newline
+{\ttfamily \+\#include $<$cmath$>$}\newline
+{\ttfamily \+\#include $<$limits$>$}\newline
+{\ttfamily \+\#include $<$random$>$}\newline
+{\ttfamily \+\#include $<$chrono$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{he__hybrid__package_2src_2he__hybrid__kmeans_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}\label{he__hybrid__package_2src_2he__hybrid__kmeans_8cpp_a3c04138a5bfe5d72780bb7e82a18e627} 
+int {\bfseries main} (int argc, char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}argv)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Hybrid HE-\/\+MPC K-\/\+Means Implementation (Production Package). 
+
+MIT License Copyright (c) 2024-\/2026 Lakshmi R. Kiran Pasumarthy SPDX-\/\+License-\/\+Identifier:\+ MIT
+
+TIPS-\/\+HECluster — Privacy-\/\+Preserving Threat Intelligence Clustering Trusted Privacy-\/\+Preserving Threat Information Platform for Sharing (TIPS) Edinburgh Napier University — PhD Research
+
+Production-\/quality hybrid HE-\/\+MPC clustering implementation incorporating:\+
+
+{\bfseries{HE (Homomorphic Encryption) Layer}}
+\begin{DoxyItemize}
+\item CKKS-\/based encrypted distance computation
+\item Supports floating-\/point threat metrics (severity, confidence, etc.)
+\item All threat data remains encrypted on honest-\/but-\/curious cloud
+\end{DoxyItemize}
+
+{\bfseries{MPC (Multi-\/\+Party Computation) Layer}}
+\begin{DoxyItemize}
+\item Kubernetes-\/deployed semi-\/honest parties
+\item Perform encrypted argmin operation via SCALE-\/\+MAMBA
+\item No single party learns cleartext distances
+\end{DoxyItemize}
+
+{\bfseries{Privacy Guarantees}}
+\begin{DoxyItemize}
+\item IND-\/\+CPA security (HE indistinguishability)
+\item Semi-\/honest security (MPC arithmetic operations)
+\item Threat records never decrypted in plaintext
+\end{DoxyItemize}
+
+{\bfseries{Performance Characteristics}}
+\begin{DoxyItemize}
+\item 59\% latency reduction vs. full HE (via hybrid design)
+\item Constant-\/round MPC argmin (no sequential comparisons)
+\item Scales to 10M threat dataset with configurable parameters
+\end{DoxyItemize}
+
+\begin{DoxyAuthor}{Author}
+Lakshmi R. Kiran Pasumarthy 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}

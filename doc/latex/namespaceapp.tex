@@ -1,0 +1,81 @@
+\doxysection{app Namespace Reference}
+\hypertarget{namespaceapp}{}\label{namespaceapp}\index{app@{app}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespaceapp_ad9c2cdedb81925392375e58250fc2ffb}{home}} ()
+\item 
+\doxymbox{\hyperlink{namespaceapp_a0019eeacd7a6221f57d9fdfd65a4ea89}{get\+\_\+data}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespaceapp_a675b4ea702c13dc4b8c05f985a25b496}\label{namespaceapp_a675b4ea702c13dc4b8c05f985a25b496} 
+{\bfseries app} = Flask(\+\_\+\+\_\+name\+\_\+\+\_\+)
+\item 
+\Hypertarget{namespaceapp_ab4a362027d4aa3246e0e0f57ebf177b0}\label{namespaceapp_ab4a362027d4aa3246e0e0f57ebf177b0} 
+{\bfseries debug}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}app.py - Flask REST API for Threat Intelligence Data (Legacy)
+
+MIT License
+Copyright (c) 2024-2026 Lakshmi R. Kiran Pasumarthy
+SPDX-License-Identifier: MIT
+
+TIPS-HECluster — Privacy-Preserving Threat Intelligence Clustering
+Trusted Privacy-Preserving Threat Information Platform for Sharing (TIPS)
+Edinburgh Napier University — PhD Research
+
+Description:
+    Legacy Flask application serving synthetic threat intelligence data.
+    This is an earlier version of the API; see old-he/api.py for current endpoint.
+    
+    Endpoints:
+    - GET /: Health check (returns JSON with status message)
+    - GET /data: Returns sample threat records with regional aggregates
+    
+    Each threat record contains:
+    - region: Geographic origin
+    - threat_count: Number of detected threats
+    - severity: Normalized severity score (0.0-1.0)
+    
+    Usage:
+        python app.py  # Runs on http://0.0.0.0:5000
+        curl http://127.0.0.1:5000/
+        curl http://127.0.0.1:5000/data
+
+Author: Lakshmi R. Kiran Pasumarthy
+Version: 0.9 (legacy)
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{namespaceapp_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespaceapp_a0019eeacd7a6221f57d9fdfd65a4ea89}\index{app@{app}!get\_data@{get\_data}}
+\index{get\_data@{get\_data}!app@{app}}
+\doxysubsubsection{\texorpdfstring{get\_data()}{get\_data()}}
+{\footnotesize\ttfamily \label{namespaceapp_a0019eeacd7a6221f57d9fdfd65a4ea89} 
+app.\+get\+\_\+data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Threat intelligence data endpoint.
+
+Returns:
+    JSON array of threat records with regional aggregates
+    Each record contains: region, threat_count, severity
+\end{DoxyVerb}
+ \Hypertarget{namespaceapp_ad9c2cdedb81925392375e58250fc2ffb}\index{app@{app}!home@{home}}
+\index{home@{home}!app@{app}}
+\doxysubsubsection{\texorpdfstring{home()}{home()}}
+{\footnotesize\ttfamily \label{namespaceapp_ad9c2cdedb81925392375e58250fc2ffb} 
+app.\+home (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Health check endpoint.
+
+Returns:
+    JSON message confirming API is operational
+\end{DoxyVerb}
+ 

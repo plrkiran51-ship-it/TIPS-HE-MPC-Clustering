@@ -1,0 +1,38 @@
+\doxysection{src/\+mpc\+\_\+interface.cpp File Reference}
+\hypertarget{src_2mpc__interface_8cpp}{}\label{src_2mpc__interface_8cpp}\index{src/mpc\_interface.cpp@{src/mpc\_interface.cpp}}
+
+
+MPC Backend Integration for Encrypted Computation.  
+
+
+
+
+\doxysubsection{Detailed Description}
+MPC Backend Integration for Encrypted Computation. 
+
+MIT License Copyright (c) 2024-\/2026 Lakshmi R. Kiran Pasumarthy SPDX-\/\+License-\/\+Identifier:\+ MIT
+
+TIPS-\/\+HECluster — Privacy-\/\+Preserving Threat Intelligence Clustering Trusted Privacy-\/\+Preserving Threat Information Platform for Sharing (TIPS) Edinburgh Napier University — PhD Research
+
+Defines the boundary between HE (homomorphic encryption) and MPC (multi-\/party computation) components. The HE pipeline performs encrypted distance computations; this layer coordinates hand-\/off to MPC workers that perform the encrypted argmin operation securely.
+
+MPC Worker Architecture:\+
+\begin{DoxyItemize}
+\item Three semi-\/honest parties coordinate via Kubernetes pods
+\item Each party holds secret-\/shares of ciphertext components
+\item Argmin determined without revealing encrypted distances
+\item Results aggregated for cluster assignment
+\end{DoxyItemize}
+
+Key Interfaces:\+
+\begin{DoxyItemize}
+\item send\+\_\+distance\+\_\+shares():\+ Distribute encrypted distances to workers
+\item receive\+\_\+cluster\+\_\+assignment():\+ Aggregate MPC results
+\end{DoxyItemize}
+
+\begin{DoxyAuthor}{Author}
+Lakshmi R. Kiran Pasumarthy 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}

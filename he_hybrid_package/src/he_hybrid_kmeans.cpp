@@ -1,3 +1,42 @@
+/**
+ * @file he_hybrid_kmeans.cpp
+ * @brief Hybrid HE-MPC K-Means Implementation (Production Package)
+ * 
+ * MIT License
+ * Copyright (c) 2024-2026 Lakshmi R. Kiran Pasumarthy
+ * SPDX-License-Identifier: MIT
+ * 
+ * TIPS-HECluster — Privacy-Preserving Threat Intelligence Clustering
+ * Trusted Privacy-Preserving Threat Information Platform for Sharing (TIPS)
+ * Edinburgh Napier University — PhD Research
+ * 
+ * @details
+ * Production-quality hybrid HE-MPC clustering implementation incorporating:
+ * 
+ * **HE (Homomorphic Encryption) Layer**
+ * - CKKS-based encrypted distance computation
+ * - Supports floating-point threat metrics (severity, confidence, etc.)
+ * - All threat data remains encrypted on honest-but-curious cloud
+ * 
+ * **MPC (Multi-Party Computation) Layer**
+ * - Kubernetes-deployed semi-honest parties
+ * - Perform encrypted argmin operation via SCALE-MAMBA
+ * - No single party learns cleartext distances
+ * 
+ * **Privacy Guarantees**
+ * - IND-CPA security (HE indistinguishability)
+ * - Semi-honest security (MPC arithmetic operations)
+ * - Threat records never decrypted in plaintext
+ * 
+ * **Performance Characteristics**
+ * - 59% latency reduction vs. full HE (via hybrid design)
+ * - Constant-round MPC argmin (no sequential comparisons)
+ * - Scales to 10M threat dataset with configurable parameters
+ * 
+ * @author Lakshmi R. Kiran Pasumarthy
+ * @version 1.0
+ */
+
 #include <openfhe/pke/openfhe.h>
 #include <iostream>
 #include <fstream>
@@ -11,6 +50,17 @@
 
 using namespace lbcrypto;
 
+/**
+ * @brief Load STIX feature vectors from CSV
+ * 
+ * @param path CSV file containing threat intelligence data
+ * 
+ * @return 2D array where each row is a 4D STIX vector [severity, confidence, attack, timestamp]
+ * 
+ * @details
+ * Reads CSV with header; each line is parsed as comma-separated floating-point values.
+ * Skips empty rows and cells. Throws exception if file not readable or empty.
+ */
 static std::vector<std::vector<double>> read_csv(const std::string& path) {
     std::ifstream in(path);
     if (!in) throw std::runtime_error("cannot open " + path);
@@ -32,6 +82,17 @@ static std::vector<std::vector<double>> read_csv(const std::string& path) {
     return X;
 }
 
+/**
+ * @brief Read ground-truth threat classification labels
+ * 
+ * @param path CSV file with one label per line (header skipped)
+ * 
+ * @return Vector of integer cluster labels (one per record)
+ * 
+ * @details
+ * Used for ARI metric computation during accuracy validation.
+ * Represents expert-annotated or pre-classified threat clusters.
+ */
 static std::vector<int> read_labels(const std::string& path) {
     std::ifstream in(path);
     if (!in) throw std::runtime_error("cannot open " + path);
@@ -45,6 +106,21 @@ static std::vector<int> read_labels(const std::string& path) {
     return y;
 }
 
+/**
+ * @brief Adjusted Rand Index (ARI) for accuracy assessment
+ * 
+ * @param a Predicted labels (from HE-MPC clustering)
+ * @param b Ground-truth labels
+ * 
+ * @return ARI in [-1.0, 1.0]
+ *   - ARI = 1.0: Perfect clustering (matches ground truth)
+ *   - ARI >= 0.85: Acceptable accuracy (thesis validation threshold)
+ *   - ARI = 0.0: Random clustering
+ * 
+ * @details
+ * Corrects for chance agreement when comparing two partitions.
+ * Thesis validates that HE-MPC achieves ARI >= 0.85 against plaintext baseline.
+ */
 static double ari(const std::vector<int>& a, const std::vector<int>& b) {
     const int n = (int)a.size();
     if ((int)b.size() != n) throw std::runtime_error("label size mismatch");
@@ -67,6 +143,21 @@ static double ari(const std::vector<int>& a, const std::vector<int>& b) {
     return (sum_nij - expected) / (max_index - expected);
 }
 
+/**
+ * @brief Compute centroid coordinates for a cluster
+ * 
+ * @param X All data points (n x d matrix)
+ * @param labels Cluster assignments from k-means
+ * @param cls Cluster ID to extract
+ * @param d Feature dimension
+ * 
+ * @return Centroid as d-dimensional vector (mean of cluster members)
+ * 
+ * @details
+ * Extracts the average feature vector for all points in cluster @p cls.
+ * Returns zero vector if cluster is empty.
+ * Used to compute final encrypted centroids after convergence.
+ */
 static std::vector<double> centroid_of(const std::vector<std::vector<double>>& X, const std::vector<int>& labels, int cls, int d) {
     std::vector<double> c(d, 0.0);
     int cnt = 0;

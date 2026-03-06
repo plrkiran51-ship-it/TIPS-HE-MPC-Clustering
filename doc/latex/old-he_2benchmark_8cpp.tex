@@ -1,0 +1,73 @@
+\doxysection{old-\/he/\+benchmark.cpp File Reference}
+\hypertarget{old-he_2benchmark_8cpp}{}\label{old-he_2benchmark_8cpp}\index{old-\/he/benchmark.cpp@{old-\/he/benchmark.cpp}}
+
+
+HE Pipeline Performance Measurement (Legacy).  
+
+
+{\ttfamily \+\#include $<$chrono$>$}\newline
+{\ttfamily \+\#include "{}openfhe.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{old-he_2benchmark_8cpp_a301c10c87827b50554ff5b1f0c4a2179}{Benchmark\+Execution}} (const std::\+string \&operation, high\+\_\+resolution\+\_\+clock::\+time\+\_\+point start)
+\begin{DoxyCompactList}\small\item\em Measure and report execution time. \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{old-he_2benchmark_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em Main benchmarking workflow. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+HE Pipeline Performance Measurement (Legacy). 
+
+MIT License Copyright (c) 2024-\/2026 Lakshmi R. Kiran Pasumarthy SPDX-\/\+License-\/\+Identifier:\+ MIT
+
+TIPS-\/\+HECluster — Privacy-\/\+Preserving Threat Intelligence Clustering Trusted Privacy-\/\+Preserving Threat Information Platform for Sharing (TIPS) Edinburgh Napier University — PhD Research
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\doxymbox{\hyperlink{deprecated__deprecated000001}{Deprecated}}]Legacy implementation; see \doxylink{src_2benchmark_8cpp}{src/\+benchmark.\+cpp} for current version\end{DoxyRefDesc}
+
+
+Measures end-\/to-\/end execution time for the HE clustering pipeline:\+
+\begin{DoxyEnumerate}
+\item Initialize cryptographic context and key pair
+\item Fetch threat data from Flask API
+\item Encrypt threat scores (time this stage)
+\item Run homomorphic k-\/means on encrypted data (time this stage)
+\item Decrypt cluster assignments (time this stage)
+\item Report timing for each stage in microseconds
+\end{DoxyEnumerate}
+
+This archived version demonstrates timing instrumentation used for performance analysis and parameter sweep experiments.
+
+\begin{DoxyAuthor}{Author}
+Lakshmi R. Kiran Pasumarthy 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+9 (legacy) 
+\end{DoxyVersion}
+
+
+\label{doc-func-members}
+\Hypertarget{old-he_2benchmark_8cpp_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{old-he_2benchmark_8cpp_a301c10c87827b50554ff5b1f0c4a2179}\index{benchmark.cpp@{benchmark.cpp}!BenchmarkExecution@{BenchmarkExecution}}
+\index{BenchmarkExecution@{BenchmarkExecution}!benchmark.cpp@{benchmark.cpp}}
+\doxysubsubsection{\texorpdfstring{BenchmarkExecution()}{BenchmarkExecution()}}
+{\footnotesize\ttfamily \label{old-he_2benchmark_8cpp_a301c10c87827b50554ff5b1f0c4a2179} 
+void Benchmark\+Execution (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{operation}{, }\item[{high\+\_\+resolution\+\_\+clock::\+time\+\_\+point}]{start}{}\end{DoxyParamCaption})}
+
+
+
+Measure and report execution time. 
+
+Computes elapsed time from {\ttfamily start} to now and prints result. \Hypertarget{old-he_2benchmark_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\index{benchmark.cpp@{benchmark.cpp}!main@{main}}
+\index{main@{main}!benchmark.cpp@{benchmark.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \label{old-he_2benchmark_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+int main (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Main benchmarking workflow. 
+
+Orchestrates encryption, clustering, and decryption with timing. External dependencies (Initialize\+Encryption, Fetch\+Threat\+Data, etc.) must be linked from other modules. 
