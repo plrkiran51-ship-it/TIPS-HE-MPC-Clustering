@@ -54,6 +54,27 @@ TIPS-HECluster implements a hybrid HE-MPC k-means clustering pipeline that allow
 - Achieves ARI ≥ 0.85 against plaintext k-means baseline, with 59% latency reduction via hybrid MPC design
 - Fully GDPR/RTBF compliant — plaintext threat features never leave the encrypted pipeline
 
+## Architecture
+
+
+## Architecture
+
+┌─────────────────────────────────────────────────────────────────────┐
+│ TIPS-HECluster Pipeline │
+│ │
+│ STIX Feed ──► Vectorise (4D) ──► CKKS Encrypt ──► HE Distance │
+│ (Flask API) Algorithm 3 OpenFHE BatchSize: ──► Computation │
+│ severity,conf, 1024–16384 (Algorithm 1) │
+│ attack,time │
+│ │
+│ HE Distance ──► MPC ArgMin ──► Cluster ──► Centroid │
+│ Shares (Kubernetes Pods) Assignment Update │
+│ (semi-honest) Ai (plaintext) │
+│ │
+│ Centroid ──► Re-encrypt ──► Next Iteration │
+│ Update (CKKS) (max 10 iters) │
+└─────────────────────────────────────────────────────────────────────┘
+
 
 ## Encryption Schemes
 
@@ -61,6 +82,41 @@ TIPS-HECluster implements a hybrid HE-MPC k-means clustering pipeline that allow
 |--------|---------------------------|---------------------|-----------|
 | CKKS | Floating-point threat scores (severity, confidence, normalised timestamp) | Add, Multiply, Rotate | Approximate real/complex |
 | BGV | Integer-based threat counts, attack type codes | Add, Multiply | Exact integers |
+
+## Repository Structure
+TIPS-HE-MPC-Clustering/
+├── src/
+│ ├── he_pipeline/ # C++ OpenFHE encryption pipeline (CKKS/BGV)
+│ ├── mpc_workers/ # MPC argmin microservice (Kubernetes pods)
+│ ├── stix_vectoriser/ # STIX-to-4D feature vector encoder (Python)
+│ └── api/ # Flask threat intelligence API (data ingestion)
+├── config/
+│ └── config.yaml # Runtime HE parameters (N, depth, batch size, k)
+├── datasets/
+│ ├── threats_10k.csv # Synthetic STIX threat records (10K rows)
+│ ├── threats_100k.csv # 100K row dataset
+│ └── threats_1m.csv # 1M row dataset
+├── results/
+│ ├── plaintext_kmeans_benchmarks.csv
+│ ├── ckks_kmeans_benchmarks.csv
+│ ├── bgv_benchmarks.csv
+│ └── parameter_sweep_results.csv
+├── figures/
+│ ├── execution_time_vs_ring_dimension.png
+│ ├── encrypted_vs_plaintext_clustering.png
+│ ├── elapsed_time_vs_depth.png
+│ └── ari_accuracy_results.png
+├── k8s/
+│ └── mpc-worker-deployment.yaml # Kubernetes MPC worker deployment
+├── CMakeLists.txt
+├── requirements.txt # Python dependencies
+├── Dockerfile
+└── README.md
+
+
+
+
+
 
 
 ## Prerequisites and Dependencies (It helps to setup )
