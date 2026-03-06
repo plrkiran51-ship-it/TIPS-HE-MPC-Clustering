@@ -9,15 +9,14 @@ endif()
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+# Manually set OpenFHE paths
+set(OpenFHE_INCLUDE_DIRS "/usr/local/include/openfhe.BAK;/usr/local/include/openfhe.BAK/core;/usr/local/include/openfhe.BAK/pke;/usr/local/include/openfhe.BAK/binfhe")
+set(OpenFHE_LIBRARIES "/usr/local/lib/libOPENFHEcore.dylib;/usr/local/lib/libOPENFHEpke.dylib;/usr/local/lib/libOPENFHEbinfhe.dylib")
+
+include_directories(${OpenFHE_INCLUDE_DIRS})
+
 add_executable(he_hybrid_kmeans src/he_hybrid_kmeans.cpp)
 add_executable(kmeans src/main.cpp)
 
-target_include_directories(he_hybrid_kmeans PRIVATE
-  /opt/homebrew/include
-  /opt/homebrew/include/openfhe
-  /opt/homebrew/include/openfhe/core
-  /opt/homebrew/include/openfhe/pke
-  /opt/homebrew/include/openfhe/binfhe
-)
-
-target_link_libraries(he_hybrid_kmeans PRIVATE OPENFHEpke OPENFHEcore OPENFHEbinfhe)
+target_link_libraries(he_hybrid_kmeans PRIVATE ${OpenFHE_LIBRARIES})
+target_link_libraries(kmeans PRIVATE ${OpenFHE_LIBRARIES})

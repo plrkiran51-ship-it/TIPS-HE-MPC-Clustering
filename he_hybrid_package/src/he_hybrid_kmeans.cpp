@@ -37,7 +37,7 @@
  * @version 1.0
  */
 
-#include <openfhe/pke/openfhe.h>
+#include <pke/openfhe.h>
 #include <iostream>
 #include <fstream>
 #include <sstream>

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/usr/local/include/openfhe.BAK -I/usr/local/include/openfhe.BAK/core -I/usr/local/include/openfhe.BAK/pke -I/usr/local/include/openfhe.BAK/binfhe
 
 CXX_FLAGSarm64 = -O3 -DNDEBUG -std=gnu++17 -arch arm64
 

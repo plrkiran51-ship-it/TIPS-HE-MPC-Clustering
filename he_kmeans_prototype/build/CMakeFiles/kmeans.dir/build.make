@@ -95,6 +95,9 @@ kmeans_EXTERNAL_OBJECTS =
 
 kmeans: CMakeFiles/kmeans.dir/src/main.cpp.o
 kmeans: CMakeFiles/kmeans.dir/build.make
+kmeans: /usr/local/lib/libOPENFHEcore.dylib
+kmeans: /usr/local/lib/libOPENFHEpke.dylib
+kmeans: /usr/local/lib/libOPENFHEbinfhe.dylib
 kmeans: CMakeFiles/kmeans.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/plrkiran1/TIPS-HE-MPC-Clustering/he_kmeans_prototype/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable kmeans"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/kmeans.dir/link.txt --verbose=$(VERBOSE)

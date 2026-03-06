@@ -95,6 +95,9 @@ he_hybrid_kmeans_EXTERNAL_OBJECTS =
 
 he_hybrid_kmeans: CMakeFiles/he_hybrid_kmeans.dir/src/he_hybrid_kmeans.cpp.o
 he_hybrid_kmeans: CMakeFiles/he_hybrid_kmeans.dir/build.make
+he_hybrid_kmeans: /usr/local/lib/libOPENFHEcore.dylib
+he_hybrid_kmeans: /usr/local/lib/libOPENFHEpke.dylib
+he_hybrid_kmeans: /usr/local/lib/libOPENFHEbinfhe.dylib
 he_hybrid_kmeans: CMakeFiles/he_hybrid_kmeans.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/plrkiran1/TIPS-HE-MPC-Clustering/he_kmeans_prototype/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable he_hybrid_kmeans"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/he_hybrid_kmeans.dir/link.txt --verbose=$(VERBOSE)

@@ -195,6 +195,9 @@ CMAKE_TAPI:FILEPATH=/Library/Developer/CommandLineTools/usr/bin/tapi
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//No help, variable specified on the command line.
+OpenFHE_DIR:UNINITIALIZED=/usr/local/lib/cmake/OpenFHE
+
 //Value Computed by CMake
 he_kmeans_prototype_BINARY_DIR:STATIC=/Users/plrkiran1/TIPS-HE-MPC-Clustering/he_kmeans_prototype/build
 

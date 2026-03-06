@@ -1,0 +1,147 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mpc-config
+  namespace: default
+data:
+  num_parties: "3"
+  ring_dim: "16384"
+  mult_depth: "4"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mpc-worker-0
+  labels:
+    app: mpc-worker
+    party: "0"
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mpc-worker
+      party: "0"
+  template:
+    metadata:
+      labels:
+        app: mpc-worker
+        party: "0"
+    spec:
+      containers:
+      - name: mpc-worker
+        image: tips-he-mpc:latest
+        env:
+        - name: PARTY_ID
+          value: "0"
+        - name: NUM_PARTIES
+          valueFrom:
+            configMapKeyRef:
+              name: mpc-config
+              key: num_parties
+        ports:
+        - containerPort: 8080
+          name: http
+        resources:
+          requests:
+            memory: "512Mi"
+            cpu: "500m"
+          limits:
+            memory: "1Gi"
+            cpu: "1000m"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mpc-worker-1
+  labels:
+    app: mpc-worker
+    party: "1"
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mpc-worker
+      party: "1"
+  template:
+    metadata:
+      labels:
+        app: mpc-worker
+        party: "1"
+    spec:
+      containers:
+      - name: mpc-worker
+        image: tips-he-mpc:latest
+        env:
+        - name: PARTY_ID
+          value: "1"
+        - name: NUM_PARTIES
+          valueFrom:
+            configMapKeyRef:
+              name: mpc-config
+              key: num_parties
+        ports:
+        - containerPort: 8080
+          name: http
+        resources:
+          requests:
+            memory: "512Mi"
+            cpu: "500m"
+          limits:
+            memory: "1Gi"
+            cpu: "1000m"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mpc-worker-2
+  labels:
+    app: mpc-worker
+    party: "2"
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mpc-worker
+      party: "2"
+  template:
+    metadata:
+      labels:
+        app: mpc-worker
+        party: "2"
+    spec:
+      containers:
+      - name: mpc-worker
+        image: tips-he-mpc:latest
+        env:
+        - name: PARTY_ID
+          value: "2"
+        - name: NUM_PARTIES
+          valueFrom:
+            configMapKeyRef:
+              name: mpc-config
+              key: num_parties
+        ports:
+        - containerPort: 8080
+          name: http
+        resources:
+          requests:
+            memory: "512Mi"
+            cpu: "500m"
+          limits:
+            memory: "1Gi"
+            cpu: "1000m"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mpc-worker-service
+  labels:
+    app: mpc-worker
+spec:
+  selector:
+    app: mpc-worker
+  ports:
+  - name: http
+    port: 8080
+    targetPort: 8080
+  type: ClusterIP
