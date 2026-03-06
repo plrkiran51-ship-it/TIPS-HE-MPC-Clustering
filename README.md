@@ -71,3 +71,9 @@ TIPS-HECluster implements a hybrid HE-MPC k-means clustering pipeline that allow
 ### Python (Vectoriser + API)
 ```bash
 pip install -r requirements.txt
+
+### Python (Vectoriser + API)
+
+```bash
+pip install -r requirements.txt
+# Key packages: flask, pandas, scikit-learn, numpy
