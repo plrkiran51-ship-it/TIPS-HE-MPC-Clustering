@@ -1,4 +1,0 @@
-/Users/plrkiran1/TIPS-HE-MPC-Clustering/he_kmeans_prototype/build/CMakeFiles/he_hybrid_kmeans.dir
-/Users/plrkiran1/TIPS-HE-MPC-Clustering/he_kmeans_prototype/build/CMakeFiles/kmeans.dir
-/Users/plrkiran1/TIPS-HE-MPC-Clustering/he_kmeans_prototype/build/CMakeFiles/edit_cache.dir
-/Users/plrkiran1/TIPS-HE-MPC-Clustering/he_kmeans_prototype/build/CMakeFiles/rebuild_cache.dir
